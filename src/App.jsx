@@ -1,39 +1,43 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// Sesuai gambar: Navbar dan ViewGaleri ada di folder components
-import Navbar from './components/Navbar.jsx';
-import ViewGaleri from './components/ViewGaleri.jsx'; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Sesuai gambar: Home dan Layanan ada di folder pages
-import Home from './pages/Home.jsx';
-import Layanan from './pages/Layanan.jsx';
+// Components
+import Navbar from "./components/Navbar";
+import ViewGaleri from "./components/ViewGaleri";
 
-// Import CSS global jika diperlukan
-import './App.css';
+// Pages
+import Home from "./pages/Home";
+import Layanan from "./pages/Layanan";
+
+// CSS
+import "./App.css";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900">
-        {/* Navbar dari folder components */}
-        <Navbar />
         
+        {/* Navbar */}
+        <Navbar />
+
         <div className="flex-grow flex flex-col">
           <Routes>
-            {/* Route ke halaman utama (Home.jsx) */}
+
+            {/* Home */}
             <Route path="/" element={<Home />} />
-            
-            {/* Route ke halaman daftar budaya (Layanan.jsx) */}
+
+            {/* Layanan */}
             <Route path="/layanan" element={<Layanan />} />
-            
-            {/* Dynamic Route ke detail galeri (ViewGaleri.jsx) */}
+
+            {/* Detail Galeri */}
             <Route path="/view-galeri/:id" element={<ViewGaleri />} />
-            
-            {/* Catch-all route kembali ke Home */}
+
+            {/* Fallback */}
             <Route path="*" element={<Home />} />
+
           </Routes>
         </div>
 
-        {/* Footer sesuai desain kelompok 4 */}
+        {/* Footer */}
         <footer className="bg-zinc-900 text-white py-10 border-t border-zinc-800">
           <div className="container mx-auto text-center px-4">
             <p className="text-[10px] md:text-xs text-zinc-500 uppercase tracking-[0.3em] mb-2">
@@ -44,6 +48,7 @@ function App() {
             </p>
           </div>
         </footer>
+
       </div>
     </Router>
   );

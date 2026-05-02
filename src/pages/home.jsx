@@ -1,8 +1,12 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/layanan");
+  };
 
   return (
     <main className="flex-grow flex items-center justify-center px-6 py-12 md:py-20 bg-gray-50">
@@ -18,9 +22,9 @@ function Home() {
           Menghasilkan Budaya Tersembunyi Melalui Panggung Digital Tanpa Batas
         </p>
 
-        {/* Tombol Navigasi ke Halaman Layanan */}
-        <button 
-          onClick={() => navigate('/layanan')}
+        {/* Tombol Navigasi */}
+        <button
+          onClick={handleNavigate}
           className="bg-[#93c5fd] hover:bg-blue-400 text-white font-black py-4 px-10 rounded-full shadow-lg transition-all transform hover:scale-105 active:scale-95 text-lg md:text-xl border-4 border-white"
         >
           Main Stage
@@ -28,7 +32,7 @@ function Home() {
         
       </div>
     </main>
-  )
+  );
 }
 
-export default Home
+export default Home;
