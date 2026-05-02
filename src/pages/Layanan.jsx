@@ -4,16 +4,6 @@ import { Link } from "react-router-dom";
 function Layanan() {
   const daftarLayanan = [
     {
-      id: "ethiopia",
-      title: "Ethiopia",
-      image: "/images/layanan1.jpg",
-    },
-    {
-      id: "indonesia",
-      title: "Indonesia",
-      image: "/images/layanan2.jpg",
-    },
-    {
       id: "laos",
       title: "Laos",
       image: "/images/layanan3.jpg",
@@ -22,6 +12,16 @@ function Layanan() {
       id: "morocco",
       title: "Morocco",
       image: "/images/layanan4.jpg",
+    },
+    {
+      id: "ethiopia",
+      title: "Ethiopia",
+      image: "/images/layanan1.jpg",
+    },
+    {
+      id: "indonesia",
+      title: "Indonesia",
+      image: "/images/layanan2.jpg",
     },
   ];
 
