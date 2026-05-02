@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, MapPin } from "lucide-react";
+import { ArrowLeft, MapPin, PlayCircle } from "lucide-react"; // Tambah icon PlayCircle
 
 function ViewGaleri() {
   const { id } = useParams();
@@ -33,9 +33,12 @@ function ViewGaleri() {
       country: "Laos",
       mainTitle: "Baci Ceremony",
       description:
-        "Laos merupakan negara yang memiliki beragam kekayaan budaya yang mencerminkan nilai spiritual dan tradisi masyarakatnya. Salah satu budaya yang masih lestari hingga saat ini adalah Baci Ceremony, yaitu ritual tradisional yang bertujuan untuk menjaga keseimbangan jiwa serta memperkuat hubungan antara individu dengan lingkungan sosial dan spiritualnya. Baci Ceremony biasanya dilakukan dalam berbagai momen penting dalam kehidupan masyarakat Laos, seperti pernikahan, kelahiran, penyambutan tamu, perayaan tahun baru, hingga saat seseorang akan melakukan perjalanan jauh atau kembali dari perjalanan. Dalam setiap kesempatan tersebut, ritual ini berfungsi sebagai bentuk doa dan harapan agar individu yang terlibat mendapatkan perlindungan, keberuntungan, serta keseimbangan dalam kehidupannya.",
+        "Laos merupakan negara yang memiliki beragam kekayaan budaya yang mencerminkan nilai spiritual dan tradisi masyarakatnya. Salah satu budaya yang masih lestari hingga saat ini adalah Baci Ceremony, yaitu ritual tradisional yang bertujuan untuk menjaga keseimbangan jiwa serta memperkuat hubungan antara individu dengan lingkungan sosial dan spiritualnya. Ritual ini memiliki akar yang dalam dalam kepercayaan masyarakat Laos, terutama di kalangan suku-suku yang mendiami wilayah tersebut. Baci Ceremony sering kali dilakukan pada momen-momen penting seperti pernikahan, kelahiran, atau saat seseorang mengalami perubahan besar dalam hidupnya.",
       secondaryDescription:
         "Dalam pelaksanaannya, Baci Ceremony dilaksanakan melalui rangkaian doa bersama yang dipimpin oleh tokoh adat. Dalam prosesi ini, benang putih diikatkan pada pergelangan tangan sebagai simbol perlindungan dan keseimbangan hidup. Praktik ini tidak hanya bersifat spiritual, tetapi juga mencerminkan nilai kebersamaan dalam kehidupan masyarakat Laos.",
+      culturalPerspective:
+        " Dalam perspektif budaya massa dan budaya populer, Baci Ceremony pada dasarnya bukan merupakan bagian dari budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan untuk konsumsi global. Ritual ini bersifat lokal, sakral, dan terbatas pada komunitas tertentu. Namun, melalui perkembangan digitalisasi, praktik budaya seperti Baci Ceremony mulai mengalami transformasi menjadi bagian dari budaya massa dalam bentuk representasi digital.Melalui platform seperti YouTube dan TikTok, dokumentasi visual dari ritual ini dapat diakses oleh audiens global. Dalam konteks ini, digitalisasi berperan sebagai medium yang mengubah budaya lokal menjadi konten yang dapat dikonsumsi secara luas, meskipun tanpa menghilangkan nilai tradisional yang melekat.Fenomena ini menunjukkan bahwa batas antara budaya tradisional dan budaya populer menjadi semakin kabur. Digitalisasi tidak hanya menyebarkan budaya populer arus utama, tetapi juga membuka ruang bagi budaya lokal yang sebelumnya tidak terekspos untuk masuk ke dalam ekosistem global.",
+      videoUrl: "https://www.youtube.com/embed/ZABBTXMXfAI", // Format embed agar bisa tampil
       mainImage: "/images/layanan5.jpg",
       extraImages: [
         "/images/laos-ritual-1.jpg",
@@ -53,7 +56,6 @@ function ViewGaleri() {
     },
   };
 
-  // fallback aman kalau id tidak ditemukan
   const data = kontenBudaya[id] ?? kontenBudaya.laos;
 
   return (
@@ -81,12 +83,7 @@ function ViewGaleri() {
           src={data.mainImage}
           alt={data.country}
           className="w-full h-full object-cover opacity-75"
-          onError={(e) => {
-            e.currentTarget.src =
-              "https://via.placeholder.com/1200x800?text=Image+Not+Found";
-          }}
         />
-
         <div className="absolute inset-0 flex items-center justify-center p-6">
           <h1 className="text-6xl md:text-[10rem] font-black text-white uppercase tracking-tighter leading-none drop-shadow-2xl select-none">
             {data.country}
@@ -94,7 +91,7 @@ function ViewGaleri() {
         </div>
       </section>
 
-      {/* Content */}
+      {/* Content Container */}
       <section className="max-w-5xl mx-auto py-24 px-8 flex flex-col items-center">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-6xl font-black mb-6 uppercase tracking-tight">
@@ -109,35 +106,63 @@ function ViewGaleri() {
           </p>
         </div>
 
+        {/* Gallery Images */}
         {data.extraImages?.length > 0 && (
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 mb-24">
             {data.extraImages.map((img, index) => (
-              <div
-                key={index}
-                className="group relative overflow-hidden bg-gray-100 rounded-sm shadow-2xl transition-all duration-500"
-              >
+              <div key={index} className="group relative overflow-hidden bg-gray-100 rounded-sm shadow-2xl">
                 <img
                   src={img}
-                  alt={`${data.country} detail ${index + 1}`}
+                  alt="detail"
                   className="w-full aspect-square md:aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-110"
-                  onError={(e) => {
-                    e.currentTarget.src =
-                      "https://via.placeholder.com/600x800?text=Image+Not+Found";
-                  }}
                 />
               </div>
             ))}
           </div>
         )}
 
+              {/* Secondary Description */}
         {data.secondaryDescription && (
-          <div className="max-w-3xl text-center mb-24">
-            <p className="text-lg md:text-xl text-gray-500 leading-relaxed">
+          <div className="max-w-3xl mb-24 px-4 md:px-0"> 
+            <p className="text-lg md:text-xl text-gray-500 leading-relaxed text-justify">
               {data.secondaryDescription}
             </p>
           </div>
         )}
 
+        {/* --- BAGIAN BARU: Cultural Perspective --- */}
+        {data.culturalPerspective && (
+          <div className="max-w-3xl bg-gray-50 p-10 border-l-4 border-blue-600 mb-24">
+            <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-4">
+              Perspektif Budaya & Digitalisasi
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic">
+              {data.culturalPerspective}
+            </p>
+          </div>
+        )}
+
+        {/* --- BAGIAN BARU: Video Embed --- */}
+        {data.videoUrl && (
+          <div className="w-full max-w-4xl mb-24">
+            <div className="flex items-center justify-center mb-8">
+                <PlayCircle className="w-6 h-6 text-blue-600 mr-3" />
+                <h3 className="text-sm font-bold uppercase tracking-[0.3em]">Dokumentasi Visual</h3>
+            </div>
+            <div className="relative aspect-video w-full shadow-2xl rounded-sm overflow-hidden bg-black">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src={data.videoUrl}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        )}
+
+        {/* Footer Decoration */}
         <div className="mt-12 pt-12 border-t border-gray-100 w-full text-center">
           <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.5em] mb-4">
             Digital Heritage Experience
