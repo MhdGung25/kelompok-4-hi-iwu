@@ -1,9 +1,8 @@
+// vite.config.js
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/react-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Tambahkan baris base di bawah ini
-  base: './', 
+  base: '/', // Pastikan ini '/' bukan './' atau dikosongkan
 })
