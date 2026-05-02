@@ -15,10 +15,16 @@ function ViewGaleri() {
       country: "Ethiopia",
       mainTitle: "Warisan Tari Gurage",
       description:
-        "Ethiopia memiliki kekayaan tradisi tari yang sangat energik, mencerminkan semangat komunitas dan sejarah panjang di wilayah Tanduk Afrika.",
-      secondaryDescription: "",
-      mainImage: "/images/layanan1.jpg",
-      extraImages: [],
+        "Ethiopia merupakan salah satu negara di kawasan Afrika Timur yang dikenal memiliki warisan budaya yang sangat kaya dan beragam, mencerminkan nilai historis, spiritual, serta identitas etnis yang kuat. Berbagai tradisi seperti musik, tarian, dan ritual sosial berkembang dalam kehidupan masyarakatnya. Salah satu bentuk ekspresi budaya yang masih lestari hingga saat ini adalah Eskista Dance, yaitu tarian tradisional khas Ethiopia yang menonjolkan gerakan bahu, leher, dan dada secara cepat dan ritmis.Eskista telah berkembang sejak berabad-abad lalu sebagai bagian dari kehidupan sosial masyarakat Ethiopia, terutama dalam komunitas Amhara dan Tigray. Tarian ini biasanya ditampilkan dalam berbagai acara seperti perayaan adat, festival budaya, upacara pernikahan, serta pertemuan sosial lainnya. Eskista dapat dilakukan oleh laki-laki maupun perempuan, baik secara individu maupun berkelompok, sebagai bentuk ekspresi kegembiraan, identitas budaya, dan solidaritas sosial.",
+        secondaryDescription:"Salah satu ciri khas utama Eskista terletak pada teknik gerakan tubuh bagian atas yang intens dan terkoordinasi, terutama pada bahu yang digerakkan secara cepat mengikuti irama musik tradisional. Gerakan ini sering dipadukan dengan langkah kaki dan ekspresi wajah yang energik, menciptakan pertunjukan yang unik dan menarik secara visual. Dari segi kostum, penari biasanya mengenakan pakaian tradisional Ethiopia seperti habesha kemis (gaun putih dengan bordir khas) untuk perempuan, serta pakaian adat sederhana dengan aksen kain tenun untuk laki-laki, yang memperkuat identitas budaya dalam pertunjukan tersebut.",
+         videoUrl: "https://www.youtube.com/embed/aaIrEAatWTg", // Format embed agar bisa tampil
+      culturalPerspective:"Dalam perspektif budaya massa dan budaya populer, Eskista Dance pada dasarnya bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan secara luas dalam industri hiburan global. Tarian ini bersifat lokal dan berakar kuat pada tradisi masyarakat tertentu. Namun demikian, perkembangan digitalisasi telah membawa perubahan signifikan dalam cara budaya ini dikenal oleh dunia luar.Melalui platform digital seperti TikTok dan YouTube, Eskista Dance kini mulai muncul dalam bentuk konten visual yang dapat diakses oleh audiens global. Gerakan yang unik dan ekspresif menjadikan tarian ini mudah menarik perhatian dalam format video pendek maupun pertunjukan digital.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu mengangkat budaya lokal ke dalam ruang global. Dalam konteks ini, batas antara budaya tradisional dan budaya populer menjadi semakin cair, di mana praktik budaya seperti Eskista mulai bertransformasi dari tradisi lokal menjadi bagian dari konsumsi budaya global.",
+      mainImage: "/images/Ethiopia.jpg",
+      extraImages: [
+        "/images/ethiopia-1.jpg",
+        "/images/ethiopia-2.jpg",
+        "/images/ethiopia-3.jpg",
+      ],
     },
     indonesia: {
       country: "Indonesia",
@@ -114,10 +120,12 @@ function ViewGaleri() {
           </p>
         </div>
 
-  {/* Gallery Images */}
+ {/* Gallery Images */}
 {data.extraImages?.length > 0 && (
   <div className={`w-full grid gap-10 mb-24 justify-items-center ${
-    data.country === "Morocco" ? "grid-cols-1 md:grid-cols-3" : "grid-cols-1 md:grid-cols-2"
+    data.extraImages.length >= 3 
+      ? "grid-cols-1 md:grid-cols-3" 
+      : "grid-cols-1 md:grid-cols-2"
   }`}>
     {data.extraImages.map((img, index) => (
       <div
