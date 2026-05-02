@@ -91,118 +91,112 @@ function ViewGaleri() {
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="relative w-full h-[65vh] md:h-[80vh] overflow-hidden bg-gray-900">
-        <img
-          src={data.mainImage}
-          alt={data.country}
-          className="w-full h-full object-cover opacity-75"
-        />
-        <div className="absolute inset-0 flex items-center justify-center p-6">
-          <h1 className="text-6xl md:text-[10rem] font-black text-white uppercase tracking-tighter leading-none drop-shadow-2xl select-none">
-            {data.country}
-          </h1>
-        </div>
-      </section>
+     {/* 1. HERO SECTION */}
+<section className="relative w-full h-[65vh] md:h-[80vh] overflow-hidden bg-gray-900">
+  <img
+    src={data.mainImage}
+    alt={data.country}
+    className="w-full h-full object-cover opacity-75"
+  />
+  <div className="absolute inset-0 flex items-center justify-center p-6">
+    <h1 className="text-6xl md:text-[10rem] font-black text-white uppercase tracking-tighter leading-none drop-shadow-2xl select-none">
+      {data.country}
+    </h1>
+  </div>
+</section>
 
-      {/* Content Container */}
-      <section className="max-w-5xl mx-auto py-24 px-8 flex flex-col items-center">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-6xl font-black mb-6 uppercase tracking-tight">
-            {data.mainTitle}
-          </h2>
-          <div className="h-1.5 w-24 bg-blue-600 mx-auto"></div>
-        </div>
+{/* 2. CONTENT CONTAINER */}
+<section className="max-w-5xl mx-auto py-24 px-8 flex flex-col items-center">
+  
+  {/* Judul Utama */}
+  <div className="text-center mb-20">
+    <h2 className="text-3xl md:text-6xl font-black mb-6 uppercase tracking-tight text-gray-900">
+      {data.mainTitle}
+    </h2>
+    <div className="h-1.5 w-24 bg-blue-600 mx-auto"></div>
+  </div>
 
-        <div className="max-w-3xl text-center mb-24">
-          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light italic text-justify">
-            "{data.description}"
-          </p>
-        </div>
+  {/* Deskripsi Intro (Italic) dengan spacing antar paragraf */}
+  <div className="max-w-3xl text-center mb-24 space-y-6">
+    <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light italic text-justify whitespace-pre-line">
+      "{data.description}"
+    </p>
+  </div>
 
- {/* Gallery Images */}
-{data.extraImages?.length > 0 && (
-  <div className={`w-full grid gap-10 mb-24 justify-items-center ${
-    data.extraImages.length >= 3 
-      ? "grid-cols-1 md:grid-cols-3" 
-      : "grid-cols-1 md:grid-cols-2"
-  }`}>
-    {data.extraImages.map((img, index) => (
-      <div
-        key={index}
-        className="group relative overflow-hidden bg-gray-100 rounded-sm shadow-2xl transition-all duration-500 w-full"
-      >
-        <img
-          src={img}
-          alt={`${data.country} detail ${index + 1}`}
-          className="w-full aspect-square md:aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-110"
-          onError={(e) => {
-            e.currentTarget.src = "https://via.placeholder.com/600x800?text=Image+Not+Found";
-          }}
-        />
+  {/* 3. GALLERY IMAGES (3 Sejajar) */}
+  {data.extraImages?.length > 0 && (
+    <div className={`w-full grid gap-10 mb-24 justify-items-center ${
+      data.extraImages.length >= 3 ? "grid-cols-1 md:grid-cols-3" : "grid-cols-1 md:grid-cols-2"
+    }`}>
+      {data.extraImages.map((img, index) => (
+        <div key={index} className="group relative overflow-hidden bg-gray-100 rounded-sm shadow-2xl transition-all duration-500 w-full">
+          <img
+            src={img}
+            alt={`${data.country} detail ${index + 1}`}
+            className="w-full aspect-square md:aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-110"
+            onError={(e) => {
+              e.currentTarget.src = "https://via.placeholder.com/600x800?text=Image+Not+Found";
+            }}
+          />
+        </div>
+      ))}
+    </div>
+  )}
+
+  {/* 4. DESKRIPSI SEKUNDER (Detail Tambahan dengan spacing paragraf) */}
+  {data.secondaryDescription && (
+    <div className="max-w-3xl mx-auto mb-24 px-4 md:px-0 space-y-8">
+      <p className="text-lg md:text-xl text-gray-500 leading-relaxed text-justify whitespace-pre-line">
+        {data.secondaryDescription}
+      </p>
+    </div>
+  )}
+
+  {/* 5. VIDEO DOKUMENTASI */}
+  {data.videoUrl && (
+    <div className="w-full max-w-4xl mb-24">
+      <div className="flex items-center justify-center mb-10">
+        <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
+        <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">Dokumentasi Visual</h3>
       </div>
-    ))}
-  </div>
-)}
-       {/* Deskripsi Utama */}
-<div className="max-w-3xl mx-auto mb-24 px-4 md:px-0">
-  <p className="text-xl md:text-2xl text-gray-600 leading-relaxed text-justify whitespace-pre-line">
-    {data.description}
-  </p>
-</div>
+      <div className="relative aspect-video w-full shadow-2xl rounded-sm overflow-hidden bg-black">
+        <iframe
+          className="absolute inset-0 w-full h-full"
+          src={data.videoUrl}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+  )}
 
-{/* Deskripsi Sekunder */}
-{data.secondaryDescription && (
-  <div className="max-w-3xl mx-auto mb-24 px-4 md:px-0">
-    <p className="text-lg md:text-xl text-gray-500 leading-relaxed text-justify whitespace-pre-line">
-      {data.secondaryDescription}
+  {/* 6. PERSPEKTIF BUDAYA */}
+  {data.culturalPerspective && (
+    <div className="max-w-3xl mx-auto bg-gray-50 p-10 border-l-4 border-blue-600 mb-24 shadow-sm">
+      <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-8 text-center">
+        Perspektif Budaya & Digitalisasi
+      </h4>
+      <div className="space-y-6">
+        <p className="text-gray-700 leading-relaxed italic text-justify whitespace-pre-line">
+          {data.culturalPerspective}
+        </p>
+      </div>
+    </div>
+  )}
+
+  {/* 7. FOOTER DECORATION */}
+  <div className="mt-12 pt-12 border-t border-gray-100 w-full text-center">
+    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.5em] mb-6">
+      Digital Heritage Experience
     </p>
+    <div className="flex justify-center space-x-4">
+      <div className="h-1.5 w-1.5 bg-blue-600 rounded-full"></div>
+      <div className="h-1.5 w-1.5 bg-blue-600 rounded-full"></div>
+      <div className="h-1.5 w-1.5 bg-blue-600 rounded-full"></div>
+    </div>
   </div>
-)}
-        {/* --- VIDEO DI ATAS --- */}
-        {data.videoUrl && (
-          <div className="w-full max-w-4xl mb-24">
-            <div className="flex items-center justify-center mb-8">
-                <PlayCircle className="w-6 h-6 text-blue-600 mr-3" />
-                <h3 className="text-sm font-bold uppercase tracking-[0.3em]">Dokumentasi Visual</h3>
-            </div>
-            <div className="relative aspect-video w-full shadow-2xl rounded-sm overflow-hidden bg-black">
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src={data.videoUrl}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        )}
-
-        {/* Perspektif Budaya */}
-{data.culturalPerspective && (
-  <div className="max-w-3xl mx-auto bg-gray-50 p-10 border-l-4 border-blue-600 mb-24">
-    <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-8 text-center">
-      Perspektif Budaya & Digitalisasi
-    </h4>
-    <p className="text-gray-700 leading-relaxed italic text-justify whitespace-pre-line">
-      {data.culturalPerspective}
-    </p>
-  </div>
-)}
-
-        {/* Footer Decoration */}
-        <div className="mt-12 pt-12 border-t border-gray-100 w-full text-center">
-          <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.5em] mb-4">
-            Digital Heritage Experience
-          </p>
-          <div className="flex justify-center space-x-4">
-            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
-            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
-            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
-          </div>
-        </div>
-      </section>
+</section>
     </main>
   );
 }
