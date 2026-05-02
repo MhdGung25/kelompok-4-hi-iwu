@@ -101,7 +101,7 @@ function ViewGaleri() {
         </div>
 
         <div className="max-w-3xl text-center mb-24">
-          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light italic">
+          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light italic text-justify">
             "{data.description}"
           </p>
         </div>
@@ -121,28 +121,16 @@ function ViewGaleri() {
           </div>
         )}
 
-              {/* Secondary Description */}
+        {/* Secondary Description - Dibuat justify seperti makalah */}
         {data.secondaryDescription && (
-          <div className="max-w-3xl mb-24 px-4 md:px-0"> 
+          <div className="max-w-3xl mb-24">
             <p className="text-lg md:text-xl text-gray-500 leading-relaxed text-justify">
               {data.secondaryDescription}
             </p>
           </div>
         )}
 
-        {/* --- BAGIAN BARU: Cultural Perspective --- */}
-        {data.culturalPerspective && (
-          <div className="max-w-3xl bg-gray-50 p-10 border-l-4 border-blue-600 mb-24">
-            <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-4">
-              Perspektif Budaya & Digitalisasi
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic">
-              {data.culturalPerspective}
-            </p>
-          </div>
-        )}
-
-        {/* --- BAGIAN BARU: Video Embed --- */}
+        {/* --- VIDEO DI ATAS --- */}
         {data.videoUrl && (
           <div className="w-full max-w-4xl mb-24">
             <div className="flex items-center justify-center mb-8">
@@ -159,6 +147,18 @@ function ViewGaleri() {
                 allowFullScreen
               ></iframe>
             </div>
+          </div>
+        )}
+
+        {/* --- TEXT PERSPEKTIF DI BAWAH - Dibuat justify seperti makalah --- */}
+        {data.culturalPerspective && (
+          <div className="max-w-3xl bg-gray-50 p-10 border-l-4 border-blue-600 mb-24">
+            <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-6 text-center">
+              Perspektif Budaya & Digitalisasi
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-justify">
+              {data.culturalPerspective}
+            </p>
           </div>
         )}
 
