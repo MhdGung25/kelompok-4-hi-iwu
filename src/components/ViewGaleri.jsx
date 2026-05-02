@@ -45,23 +45,23 @@ function ViewGaleri() {
         "/images/laos-ritual-2.jpg",
       ],
     },
-  morocco: {
-  country: "Morocco",
-  mainTitle: "Ritme Musik Gnawa",
-  description:
-    "Morocco merupakan negara di kawasan Afrika Utara yang dikenal dengan kekayaan budaya hasil pertemuan berbagai peradaban, seperti Arab, Berber (Amazigh), dan Afrika Sub-Sahara. Keberagaman ini tercermin dalam berbagai bentuk ekspresi budaya, mulai dari arsitektur, kuliner, hingga musik tradisional. Salah satu warisan budaya yang masih lestari hingga saat ini adalah Gnawa Music.\n\nGnawa Music merupakan tradisi musik spiritual yang berkembang sejak sekitar abad ke-16, berakar dari komunitas keturunan Afrika Sub-Sahara yang dibawa ke wilayah Morocco. Musik ini awalnya digunakan sebagai bagian dari praktik spiritual dan ritual penyembuhan, yang kemudian berkembang menjadi identitas budaya komunitas Gnawa.",
-  secondaryDescription: 
-    "Secara umum, Gnawa Music dimainkan oleh para musisi yang disebut “Maâlem” (pemimpin musik) bersama kelompoknya. Mereka menggunakan instrumen tradisional seperti guembri (alat musik petik) dan qraqeb (alat musik perkusi logam) yang menghasilkan ritme repetitif khas. Musik ini biasanya ditampilkan dalam upacara spiritual yang dikenal sebagai “lila”, yaitu ritual malam hari yang bertujuan untuk penyembuhan, refleksi spiritual, dan menjaga keseimbangan batin.\n\nDalam pertunjukannya, para pemain Gnawa mengenakan pakaian tradisional yang khas, seperti jellaba atau gandoura (jubah panjang) yang dihiasi dengan warna-warna cerah dan simbol-simbol tertentu. Selain itu, mereka sering menggunakan topi khas yang dilengkapi dengan hiasan rumbai atau tassel yang bergerak mengikuti irama musik, menciptakan kesan visual yang dinamis. Pakaian ini tidak hanya berfungsi sebagai identitas budaya, tetapi juga memiliki makna simbolik yang berkaitan dengan spiritualitas dan tradisi komunitas Gnawa.",
-  videoUrl: "https://www.youtube.com/embed/9wfdX2N1RA0",
-  culturalPerspective:
-    "Dalam perspektif budaya massa dan budaya populer, Gnawa Music pada dasarnya bukan merupakan budaya populer karena tidak diproduksi secara massal untuk konsumsi global, melainkan memiliki fungsi spiritual dan komunitas yang kuat. Namun, seiring perkembangan digitalisasi, Gnawa mulai mengalami transformasi menjadi bagian dari budaya massa dalam bentuk konten digital dan pertunjukan global.\n\nMelalui platform seperti YouTube dan Spotify, musik Gnawa kini dapat diakses oleh audiens internasional dan bahkan berkolaborasi dengan genre musik modern. Hal ini menunjukkan bahwa digitalisasi berperan sebagai medium yang menghubungkan tradisi lokal dengan pasar global.\n\nFenomena ini memperlihatkan bahwa batas antara budaya tradisional dan budaya populer menjadi semakin dinamis, di mana praktik budaya yang awalnya bersifat lokal dan spiritual dapat bertransformasi menjadi bagian dari konsumsi budaya global tanpa sepenuhnya kehilangan identitas aslinya.",
-  mainImage: "/images/Morocco.jpg",
-  extraImages: [
-    "/images/Morocco-1.jpg",
-    "/images/Morocco-2.jpg",
-    "/images/Morocco-3.jpg",
-  ],
-},
+    morocco: {
+    country: "Morocco",
+    mainTitle: "Ritme Musik Gnawa",
+    description:
+      "Morocco merupakan negara di kawasan Afrika Utara yang dikenal dengan kekayaan budaya hasil pertemuan berbagai peradaban, seperti Arab, Berber (Amazigh), dan Afrika Sub-Sahara. Keberagaman ini tercermin dalam berbagai bentuk ekspresi budaya, mulai dari arsitektur, kuliner, hingga musik tradisional. Salah satu warisan budaya yang masih lestari hingga saat ini adalah Gnawa Music.\n\nGnawa Music merupakan tradisi musik spiritual yang berkembang sejak sekitar abad ke-16, berakar dari komunitas keturunan Afrika Sub-Sahara yang dibawa ke wilayah Morocco. Musik ini awalnya digunakan sebagai bagian dari praktik spiritual dan ritual penyembuhan, yang kemudian berkembang menjadi identitas budaya komunitas Gnawa.",
+    secondaryDescription: 
+      "Secara umum, Gnawa Music dimainkan oleh para musisi yang disebut “Maâlem” (pemimpin musik) bersama kelompoknya. Mereka menggunakan instrumen tradisional seperti guembri (alat musik petik) dan qraqeb (alat musik perkusi logam) yang menghasilkan ritme repetitif khas. Musik ini biasanya ditampilkan dalam upacara spiritual yang dikenal sebagai “lila”, yaitu ritual malam hari yang bertujuan untuk penyembuhan, refleksi spiritual, dan menjaga keseimbangan batin.\n\nDalam pertunjukannya, para pemain Gnawa mengenakan pakaian tradisional yang khas, seperti jellaba atau gandoura (jubah panjang) yang dihiasi dengan warna-warna cerah dan simbol-simbol tertentu. Selain itu, mereka sering menggunakan topi khas yang dilengkapi dengan hiasan rumbai atau tassel yang bergerak mengikuti irama musik, menciptakan kesan visual yang dinamis. Pakaian ini tidak hanya berfungsi sebagai identitas budaya, tetapi juga memiliki makna simbolik yang berkaitan dengan spiritualitas dan tradisi komunitas Gnawa.",
+    videoUrl: "https://www.youtube.com/embed/9wfdX2N1RA0",
+    culturalPerspective:
+      "Dalam perspektif budaya massa dan budaya populer, Gnawa Music pada dasarnya bukan merupakan budaya populer karena tidak diproduksi secara massal untuk konsumsi global, melainkan memiliki fungsi spiritual dan komunitas yang kuat. Namun, seiring perkembangan digitalisasi, Gnawa mulai mengalami transformasi menjadi bagian dari budaya massa dalam bentuk konten digital dan pertunjukan global.\n\nMelalui platform seperti YouTube dan Spotify, musik Gnawa kini dapat diakses oleh audiens internasional dan bahkan berkolaborasi dengan genre musik modern. Hal ini menunjukkan bahwa digitalisasi berperan sebagai medium yang menghubungkan tradisi lokal dengan pasar global.\n\nFenomena ini memperlihatkan bahwa batas antara budaya tradisional dan budaya populer menjadi semakin dinamis, di mana praktik budaya yang awalnya bersifat lokal dan spiritual dapat bertransformasi menjadi bagian dari konsumsi budaya global tanpa sepenuhnya kehilangan identitas aslinya.",
+    mainImage: "/images/Morocco.jpg",
+    extraImages: [
+      "/images/Morocco-1.jpg",
+      "/images/Morocco-2.jpg",
+      "/images/Morocco-3.jpg",
+    ],
+  },
   };
 
   const data = kontenBudaya[id] ?? kontenBudaya.laos;
@@ -114,42 +114,43 @@ function ViewGaleri() {
           </p>
         </div>
 
-       {/* Gallery Images */}
+  {/* Gallery Images */}
 {data.extraImages?.length > 0 && (
-  <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 mb-24 justify-items-center">
-    {data.extraImages.map((img, index) => {
-      // Logika untuk mendeteksi jika gambar terakhir sendirian di baris baru
-      const isLastOdd = index === data.extraImages.length - 1 && data.extraImages.length % 2 !== 0;
-
-      return (
-        <div
-          key={index}
-          className={`group relative overflow-hidden bg-gray-100 rounded-sm shadow-2xl transition-all duration-500 w-full 
-            ${isLastOdd ? "md:col-span-2 md:max-w-[calc(50%-20px)]" : ""}`}
-        >
-          <img
-            src={img}
-            alt={`${data.country} detail ${index + 1}`}
-            className="w-full aspect-square md:aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-110"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/600x800?text=Image+Not+Found";
-            }}
-          />
-        </div>
-      );
-    })}
+  <div className={`w-full grid gap-10 mb-24 justify-items-center ${
+    data.country === "Morocco" ? "grid-cols-1 md:grid-cols-3" : "grid-cols-1 md:grid-cols-2"
+  }`}>
+    {data.extraImages.map((img, index) => (
+      <div
+        key={index}
+        className="group relative overflow-hidden bg-gray-100 rounded-sm shadow-2xl transition-all duration-500 w-full"
+      >
+        <img
+          src={img}
+          alt={`${data.country} detail ${index + 1}`}
+          className="w-full aspect-square md:aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-110"
+          onError={(e) => {
+            e.currentTarget.src = "https://via.placeholder.com/600x800?text=Image+Not+Found";
+          }}
+        />
+      </div>
+    ))}
   </div>
 )}
+       {/* Deskripsi Utama */}
+<div className="max-w-3xl mx-auto mb-24 px-4 md:px-0">
+  <p className="text-xl md:text-2xl text-gray-600 leading-relaxed text-justify whitespace-pre-line">
+    {data.description}
+  </p>
+</div>
 
-        {/* Secondary Description - Dibuat justify seperti makalah */}
-        {data.secondaryDescription && (
-          <div className="max-w-3xl mb-24">
-            <p className="text-lg md:text-xl text-gray-500 leading-relaxed text-justify">
-              {data.secondaryDescription}
-            </p>
-          </div>
-        )}
-
+{/* Deskripsi Sekunder */}
+{data.secondaryDescription && (
+  <div className="max-w-3xl mx-auto mb-24 px-4 md:px-0">
+    <p className="text-lg md:text-xl text-gray-500 leading-relaxed text-justify whitespace-pre-line">
+      {data.secondaryDescription}
+    </p>
+  </div>
+)}
         {/* --- VIDEO DI ATAS --- */}
         {data.videoUrl && (
           <div className="w-full max-w-4xl mb-24">
@@ -170,17 +171,17 @@ function ViewGaleri() {
           </div>
         )}
 
-        {/* --- TEXT PERSPEKTIF DI BAWAH - Dibuat justify seperti makalah --- */}
-        {data.culturalPerspective && (
-          <div className="max-w-3xl bg-gray-50 p-10 border-l-4 border-blue-600 mb-24">
-            <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-6 text-center">
-              Perspektif Budaya & Digitalisasi
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic text-justify">
-              {data.culturalPerspective}
-            </p>
-          </div>
-        )}
+        {/* Perspektif Budaya */}
+{data.culturalPerspective && (
+  <div className="max-w-3xl mx-auto bg-gray-50 p-10 border-l-4 border-blue-600 mb-24">
+    <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-8 text-center">
+      Perspektif Budaya & Digitalisasi
+    </h4>
+    <p className="text-gray-700 leading-relaxed italic text-justify whitespace-pre-line">
+      {data.culturalPerspective}
+    </p>
+  </div>
+)}
 
         {/* Footer Decoration */}
         <div className="mt-12 pt-12 border-t border-gray-100 w-full text-center">
