@@ -21,7 +21,7 @@ function Layanan() {
     {
       id: "indonesia",
       title: "Indonesia",
-      image: "/images/layanan2.jpg",
+      image: "/images/Tari-lolu.jpeg",
     },
   ];
 
