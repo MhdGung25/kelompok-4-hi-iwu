@@ -8,7 +8,7 @@ function About() {
       {/* Background Image - Dioptimalkan untuk Mobile & Desktop */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/behind-the-stage.jpg" // Pastikan file ini sesuai dengan WhatsApp Image 2026-05-03 at 20.30.22.jpg
+          src="/images/Behind-the-stage.jpg" // Pastikan file ini sesuai dengan WhatsApp Image 2026-05-03 at 20.30.22.jpg
           alt="Background"
           className="h-full w-full object-cover object-[70%_center] md:object-center opacity-90 md:opacity-100"
         />
