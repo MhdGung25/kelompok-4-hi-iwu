@@ -50,14 +50,15 @@ function Layanan() {
               {/* Image */}
               <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-100 shadow-sm border border-gray-100 rounded-sm">
                 <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-48 md:h-64 object-cover object-top"
-                  onError={(e) => {
-                    e.currentTarget.src =
-                      "https://via.placeholder.com/400x300?text=Image+Not+Found";
-                  }}
-                />
+                src={item.image}
+                alt={item.title}
+                // h-auto memastikan tinggi otomatis, aspect-video menjaga rasio 16:9
+                className="w-full h-auto aspect-video object-cover rounded-lg"
+                onError={(e) => {
+                  e.currentTarget.src =
+                    "https://via.placeholder.com/400x300?text=Image+Not+Found";
+                }}
+              />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
               </div>
 
