@@ -28,13 +28,13 @@ function ViewGaleri() {
     },
     indonesia: {
       country: "Indonesia",
-      mainTitle: "Seni Wayang Kulit",
+      mainTitle: "TARI LULO DAN KARIA CEREMONY",
       description:
         "Wayang Kulit adalah seni pertunjukan tradisional Indonesia yang memadukan narasi mitologi dengan keahlian tata pahat dan bayangan yang imersif.",
       secondaryDescription: "",
        culturalPerspective:"",
        videoUrl:"",
-      mainImage: "/images/layanan2.jpg",
+      mainImage: "/images/Tari-lolu.jpeg",
       extraImages: [
 
       ],
