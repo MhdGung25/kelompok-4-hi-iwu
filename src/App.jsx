@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Components
 import Navbar from "./components/Navbar";
 import ViewGaleri from "./components/ViewGaleri";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Pages
 import Home from "./pages/Home";
 import Layanan from "./pages/Layanan";
-// import Tentang from "./pages/Tentang";
+import Tentang from "./pages/about";
 // import Kontak from "./pages/Kontak";
 
 // CSS
@@ -16,6 +17,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-white font-sans text-gray-900">
         
         {/* Navbar */}
@@ -34,7 +36,7 @@ function App() {
             <Route path="/view-galeri/:id" element={<ViewGaleri />} />
 
             {/* Tentang */}
-            {/* <Route path="/tentang" element={<Tentang />} /> */}
+            { <Route path="/about" element={<Tentang />} /> }
 
             {/* Kontak */}
             {/* <Route path="/kontak" element={<Kontak />} /> */}

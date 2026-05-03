@@ -18,7 +18,7 @@ function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
          <a href="/" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Beranda</a>
           <a href="/layanan" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Layanan</a>
-          <a href="#" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Tentang Kami</a>
+          <a href="/about" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Tentang Kami</a>
           <a href="#" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Kontak</a>
             </div>
           </div>
