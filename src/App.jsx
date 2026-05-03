@@ -7,6 +7,8 @@ import ViewGaleri from "./components/ViewGaleri";
 // Pages
 import Home from "./pages/Home";
 import Layanan from "./pages/Layanan";
+// import Tentang from "./pages/Tentang";
+// import Kontak from "./pages/Kontak";
 
 // CSS
 import "./App.css";
@@ -30,6 +32,12 @@ function App() {
 
             {/* Detail Galeri */}
             <Route path="/view-galeri/:id" element={<ViewGaleri />} />
+
+            {/* Tentang */}
+            {/* <Route path="/tentang" element={<Tentang />} /> */}
+
+            {/* Kontak */}
+            {/* <Route path="/kontak" element={<Kontak />} /> */}
 
             {/* Fallback */}
             <Route path="*" element={<Home />} />
