@@ -21,7 +21,7 @@ function Layanan() {
     {
       id: "indonesia",
       title: "Indonesia",
-      image: "/images/Tari-lolu.jpeg",
+      image: "/images/Tari-lolu.jpg",
     },
   ];
 
@@ -52,7 +52,7 @@ function Layanan() {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-48 md:h-64 object-cover object-top"
                   onError={(e) => {
                     e.currentTarget.src =
                       "https://via.placeholder.com/400x300?text=Image+Not+Found";

@@ -27,18 +27,37 @@ function ViewGaleri() {
       ],
     },
     indonesia: {
-      country: "Indonesia",
-      mainTitle: "TARI LULO DAN KARIA CEREMONY",
-      description:
-        "Wayang Kulit adalah seni pertunjukan tradisional Indonesia yang memadukan narasi mitologi dengan keahlian tata pahat dan bayangan yang imersif.",
-      secondaryDescription: "",
-       culturalPerspective:"",
-       videoUrl:"",
-      mainImage: "/images/Tari-lolu.jpeg",
-      extraImages: [
+  country: "Indonesia",
+  mainTitle: "TARI LULO DAN KARIA CEREMONY",
+  description: "Indonesia merupakan negara kepulauan yang memiliki keragaman budaya yang sangat luas, dipengaruhi oleh sejarah panjang interaksi antar-etnis, agama, dan tradisi lokal. Kekayaan budaya ini tercermin dalam berbagai praktik sosial dan ritual yang berkembang di tiap daerah. Salah satu wilayah yang memiliki tradisi budaya khas adalah Sulawesi Tenggara, khususnya dalam bentuk Tari Lulo dan Karia Ceremony, yang merepresentasikan dimensi sosial dan spiritual masyarakat setempat.",
+  
+  // Deskripsi Tari Lulo
+  secondaryDescription: "Tari Lulo merupakan salah satu bentuk ekspresi budaya tradisional yang berasal dari masyarakat Tolaki di Sulawesi Tenggara. Sebagai bagian dari kebudayaan agraris, Tari Lulo telah dipraktikkan secara turun-temurun sejak masa lampau, terutama dalam konteks ritual syukuran setelah panen sebagai wujud rasa terima kasih kepada alam. Dalam perkembangannya, fungsi tarian ini mengalami transformasi dari ritual agraris menjadi sarana interaksi sosial yang lebih luas dalam kehidupan masyarakat.Secara etimologis dan filosofis, Tari Lulo mengandung nilai kebersamaan dan kesetaraan, yang tercermin dari pola formasi lingkaran yang digunakan dalam pertunjukannya. Para peserta—baik laki-laki maupun perempuan dari berbagai usia dan latar belakang—bergabung dalam satu lingkaran dengan saling berpegangan tangan. Formasi ini melambangkan persatuan, solidaritas, serta hubungan harmonis antarindividu dalam komunitas.Gerakan dalam Tari Lulo cenderung sederhana, repetitif, namun ritmis, dengan fokus pada langkah kaki yang bergerak mengikuti irama musik pengiring. Kesederhanaan gerakan ini justru menjadi kekuatan utama, karena memungkinkan siapa saja untuk ikut serta tanpa memerlukan pelatihan khusus. Hal ini menjadikan Tari Lulo sebagai tarian partisipatif, bukan sekadar pertunjukan, melainkan pengalaman kolektif yang melibatkan seluruh peserta. Dari segi musik pengiring, Tari Lulo biasanya diiringi oleh alat musik tradisional maupun modern, seperti gong, gendang, atau bahkan musik elektronik dalam konteks kontemporer. Irama yang dihasilkan bersifat dinamis dan berulang, menciptakan suasana yang hidup dan mendorong keterlibatan aktif dari para peserta.Dalam praktiknya, Tari Lulo sering ditampilkan dalam berbagai acara, seperti perayaan adat, penyambutan tamu, festival budaya, hingga kegiatan sosial masyarakat. Tarian ini juga memiliki fungsi sebagai media komunikasi sosial, di mana interaksi antarindividu terjadi secara alami melalui gerakan dan kebersamaan dalam lingkaran.Dari segi busana, peserta Tari Lulo dapat mengenakan pakaian adat khas Sulawesi Tenggara yang mencerminkan identitas budaya lokal, atau busana sopan dalam konteks acara non-formal. Dalam pertunjukan resmi, penggunaan pakaian adat dengan motif dan warna tertentu menambah nilai estetika serta memperkuat representasi budaya.",
+  
+  // FOTO UNTUK TARI LULO (Akan muncul setelah teks Lulo)
+  extraImages: [
+    "/images/Tari-lolu2.jpg",
+    "/images/Tari-lolu3.jpg",
+    "/images/Tari-lolu4.jpg",
+  ],
 
-      ],
-    },
+  // --- TAMBAHAN UNTUK MENGISI BAGIAN PANAH MERAH ---
+  kariaDescription: "Sementara itu, Karia Ceremony merupakan salah satu ritual adat yang berasal dari masyarakat Buton, Sulawesi Tenggara, yang memiliki makna penting dalam struktur sosial dan budaya setempat. Tradisi ini telah ada sejak masa Kesultanan Buton dan diwariskan secara turun-temurun sebagai bagian dari sistem nilai yang mengatur kehidupan masyarakat.Karia Ceremony berfungsi sebagai ritus peralihan (rite of passage) yang menandai proses kedewasaan perempuan. Ritual ini tidak hanya menjadi simbol perubahan status individu, tetapi juga merupakan bentuk pengakuan sosial dari masyarakat terhadap kesiapan seseorang dalam menjalani peran dan tanggung jawab sebagai anggota komunitas yang lebih dewasa.Dalam perspektif budaya massa dan budaya populer, baik Tari Lulo maupun Karia Ceremony bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan dalam industri hiburan global. Keduanya berakar kuat pada konteks lokal, dengan fungsi utama yang bersifat sosial dan spiritual, bukan sebagai komoditas hiburan.Namun demikian, perkembangan digitalisasi telah membuka ruang baru bagi kedua budaya ini untuk dikenal lebih luas. Melalui platform digital seperti TikTok dan YouTube, dokumentasi Tari Lulo yang bersifat interaktif serta Karia Ceremony yang sarat makna simbolik mulai dapat diakses oleh audiens global.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu menghubungkan budaya lokal dengan ruang global. Dalam konteks ini, praktik budaya yang sebelumnya terbatas pada komunitas tertentu kini memiliki potensi untuk menjadi bagian dari konsumsi budaya global, tanpa harus kehilangan nilai dan identitas aslinya.",
+  
+  kariaImages: [
+    "/images/Tari-lolu5.jpg",
+    "/images/Tari-lolu6.jpg",
+    "/images/Tari-lolu7.jpg",
+  ],
+  // ------------------------------------------------
+
+  culturalPerspective: "Dalam perspektif budaya massa dan budaya populer, baik Tari Lulo maupun Karia Ceremony bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan dalam industri hiburan global. Keduanya berakar kuat pada konteks lokal, dengan fungsi utama yang bersifat sosial dan spiritual, bukan sebagai komoditas hiburan.Namun demikian, perkembangan digitalisasi telah membuka ruang baru bagi kedua budaya ini untuk dikenal lebih luas. Melalui platform digital seperti TikTok dan YouTube, dokumentasi Tari Lulo yang bersifat interaktif serta Karia Ceremony yang sarat makna simbolik mulai dapat diakses oleh audiens global.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu menghubungkan budaya lokal dengan ruang global. Dalam konteks ini, praktik budaya yang sebelumnya terbatas pada komunitas tertentu kini memiliki potensi untuk menjadi bagian dari konsumsi budaya global, tanpa harus kehilangan nilai dan identitas aslinya.",
+  mainImage: "/images/Tari-lolu-1.jpg",
+  videos: [
+    "https://www.youtube.com/embed/Zvnf8o5tajY",
+    "https://www.youtube.com/embed/VQHLS_QKs2I"
+  ]
+},
     laos: {
       country: "Laos",
       mainTitle: "Baci Ceremony",
@@ -76,7 +95,7 @@ function ViewGaleri() {
 
   const data = kontenBudaya[id] ?? kontenBudaya.laos;
 
-  return (
+ return (
     <main className="min-h-screen bg-white font-sans text-gray-900">
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md py-4 px-6 border-b border-gray-100 flex justify-between items-center">
@@ -95,112 +114,135 @@ function ViewGaleri() {
         </div>
       </nav>
 
-     {/* 1. HERO SECTION */}
-<section className="relative w-full h-[65vh] md:h-[80vh] overflow-hidden bg-gray-900">
-  <img
-    src={data.mainImage}
-    alt={data.country}
-    className="w-full h-full object-cover opacity-75"
-  />
-  <div className="absolute inset-0 flex items-center justify-center p-6">
-    <h1 className="text-6xl md:text-[10rem] font-black text-white uppercase tracking-tighter leading-none drop-shadow-2xl select-none">
-      {data.country}
-    </h1>
-  </div>
-</section>
-
-{/* 2. CONTENT CONTAINER */}
-<section className="max-w-5xl mx-auto py-24 px-8 flex flex-col items-center">
-  
-  {/* Judul Utama */}
-  <div className="text-center mb-20">
-    <h2 className="text-3xl md:text-6xl font-black mb-6 uppercase tracking-tight text-gray-900">
-      {data.mainTitle}
-    </h2>
-    <div className="h-1.5 w-24 bg-blue-600 mx-auto"></div>
-  </div>
-
-  {/* Deskripsi Intro (Italic) dengan spacing antar paragraf */}
-  <div className="max-w-3xl text-center mb-24 space-y-6">
-    <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light italic text-justify whitespace-pre-line">
-      "{data.description}"
-    </p>
-  </div>
-
-  {/* 3. GALLERY IMAGES (3 Sejajar) */}
-  {data.extraImages?.length > 0 && (
-    <div className={`w-full grid gap-10 mb-24 justify-items-center ${
-      data.extraImages.length >= 3 ? "grid-cols-1 md:grid-cols-3" : "grid-cols-1 md:grid-cols-2"
-    }`}>
-      {data.extraImages.map((img, index) => (
-        <div key={index} className="group relative overflow-hidden bg-gray-100 rounded-sm shadow-2xl transition-all duration-500 w-full">
-          <img
-            src={img}
-            alt={`${data.country} detail ${index + 1}`}
-            className="w-full aspect-square md:aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-110"
-            onError={(e) => {
-              e.currentTarget.src = "https://via.placeholder.com/600x800?text=Image+Not+Found";
-            }}
-          />
+      {/* 1. HERO SECTION */}
+      <section className="relative w-full h-[65vh] md:h-[80vh] overflow-hidden bg-gray-900">
+        <img
+          src={data.mainImage}
+          alt={data.country}
+          className="w-full h-full object-cover opacity-75"
+        />
+        <div className="absolute inset-0 flex items-center justify-center p-6">
+          <h1 className="text-6xl md:text-[10rem] font-black text-white uppercase tracking-tighter leading-none drop-shadow-2xl select-none">
+            {data.country}
+          </h1>
         </div>
-      ))}
-    </div>
-  )}
+      </section>
 
-  {/* 4. DESKRIPSI SEKUNDER (Detail Tambahan dengan spacing paragraf) */}
-  {data.secondaryDescription && (
-    <div className="max-w-3xl mx-auto mb-24 px-4 md:px-0 space-y-8">
-      <p className="text-lg md:text-xl text-gray-500 leading-relaxed text-justify whitespace-pre-line">
-        {data.secondaryDescription}
-      </p>
-    </div>
-  )}
+      {/* 2. CONTENT CONTAINER */}
+      <section className="max-w-6xl mx-auto py-24 px-8 flex flex-col items-center">
+        
+        {/* Judul Utama */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight text-gray-900 italic">
+            {data.mainTitle}
+          </h2>
+          <div className="h-1.5 w-24 bg-blue-600 mx-auto"></div>
+        </div>
 
-  {/* 5. VIDEO DOKUMENTASI */}
-  {data.videoUrl && (
-    <div className="w-full max-w-4xl mb-24">
-      <div className="flex items-center justify-center mb-10">
-        <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
-        <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">Dokumentasi Visual</h3>
-      </div>
-      <div className="relative aspect-video w-full shadow-2xl rounded-sm overflow-hidden bg-black">
-        <iframe
-          className="absolute inset-0 w-full h-full"
-          src={data.videoUrl}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-  )}
+        {/* Deskripsi Intro */}
+        <div className="max-w-4xl text-center mb-20 space-y-6">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed text-justify whitespace-pre-line">
+            {data.description}
+          </p>
+        </div>
 
-  {/* 6. PERSPEKTIF BUDAYA */}
-  {data.culturalPerspective && (
-    <div className="max-w-3xl mx-auto bg-gray-50 p-10 border-l-4 border-blue-600 mb-24 shadow-sm">
-      <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-8 text-center">
-        Perspektif Budaya & Digitalisasi
-      </h4>
-      <div className="space-y-6">
-        <p className="text-gray-700 leading-relaxed italic text-justify whitespace-pre-line">
-          {data.culturalPerspective}
-        </p>
-      </div>
-    </div>
-  )}
+        {/* 3. GALLERY IMAGES (Tari Lulo) */}
+        {data.extraImages?.length > 0 && (
+          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            {data.extraImages.map((img, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-lg shadow-xl">
+                <img
+                  src={img}
+                  alt={`${data.country} ${index}`}
+                  className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+            ))}
+          </div>
+        )}
 
-  {/* 7. FOOTER DECORATION */}
-  <div className="mt-12 pt-12 border-t border-gray-100 w-full text-center">
-    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.5em] mb-6">
-      Digital Heritage Experience
-    </p>
-    <div className="flex justify-center space-x-4">
-      <div className="h-1.5 w-1.5 bg-blue-600 rounded-full"></div>
-      <div className="h-1.5 w-1.5 bg-blue-600 rounded-full"></div>
-      <div className="h-1.5 w-1.5 bg-blue-600 rounded-full"></div>
-    </div>
-  </div>
-</section>
+        {/* 4. DESKRIPSI SEKUNDER (Tari Lulo) */}
+        {data.secondaryDescription && (
+          <div className="max-w-4xl mx-auto mb-20">
+            <p className="text-lg text-gray-500 leading-relaxed text-justify whitespace-pre-line">
+              {data.secondaryDescription}
+            </p>
+          </div>
+        )}
+
+        {/* --- 5. TAMBAHAN KARIA CEREMONY (GAMBAR & TEKS) --- */}
+        {data.kariaDescription && (
+          <div className="w-full max-w-6xl mx-auto mb-20">
+            {/* Gambar Karia (3 Sejajar) */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              {data.kariaImages?.map((img, index) => (
+                <div key={index} className="group relative overflow-hidden rounded-lg shadow-xl">
+                  <img 
+                    src={img} 
+                    alt="Karia Ceremony" 
+                    className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" 
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Teks Deskripsi Karia */}
+            <div className="max-w-4xl mx-auto border-l-4 border-blue-600 pl-6 py-2 bg-gray-50 rounded-r-lg shadow-sm">
+              <h3 className="text-xl font-bold mb-3 text-gray-800">Karia Ceremony</h3>
+              <p className="text-lg text-gray-600 leading-relaxed text-justify whitespace-pre-line">
+                {data.kariaDescription}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* 6. VIDEO DOKUMENTASI (DUA SEJAJAR) */}
+        {(data.videos || data.videoUrl) && (
+          <div className="w-full mb-20">
+            <div className="flex items-center justify-center mb-10">
+              <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
+              <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">Dokumentasi Visual</h3>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+              {(data.videos || [data.videoUrl, data.videoUrl2]).filter(Boolean).map((url, idx) => (
+                <div key={idx} className="relative aspect-video shadow-2xl rounded-xl overflow-hidden bg-black">
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src={url}
+                    title={`Video ${idx + 1}`}
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 7. PERSPEKTIF BUDAYA */}
+        {data.culturalPerspective && (
+          <div className="max-w-4xl mx-auto bg-gray-50 p-10 border-l-8 border-blue-600 mb-20 shadow-inner rounded-r-xl">
+            <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-6">
+              Perspektif Budaya & Digitalisasi
+            </h4>
+            <p className="text-gray-700 leading-relaxed italic text-justify whitespace-pre-line">
+              {data.culturalPerspective}
+            </p>
+          </div>
+        )}
+
+        {/* 8. FOOTER DECORATION */}
+        <div className="mt-12 pt-12 border-t border-gray-100 w-full text-center">
+          <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.5em] mb-6">
+            Digital Heritage Experience
+          </p>
+          <div className="flex justify-center space-x-4">
+            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
+            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
+            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
