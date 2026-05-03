@@ -19,7 +19,7 @@ function Home() {
         
         {/* Deskripsi */}
         <p className="text-base md:text-xl text-gray-600 leading-relaxed max-w-2xl px-4 md:px-0 mb-10">
-          Menghasilkan Budaya Tersembunyi Melalui Panggung Digital Tanpa Batas
+           Menghadirkan Budaya Tersembunyi Melalui Panggung Digital Tanpa Batas
         </p>
 
         {/* Tombol Navigasi */}

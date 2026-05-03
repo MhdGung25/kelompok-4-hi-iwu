@@ -32,8 +32,12 @@ function ViewGaleri() {
       description:
         "Wayang Kulit adalah seni pertunjukan tradisional Indonesia yang memadukan narasi mitologi dengan keahlian tata pahat dan bayangan yang imersif.",
       secondaryDescription: "",
+       culturalPerspective:"",
+       videoUrl:"",
       mainImage: "/images/layanan2.jpg",
-      extraImages: [],
+      extraImages: [
+
+      ],
     },
     laos: {
       country: "Laos",
