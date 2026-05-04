@@ -5,12 +5,18 @@ import { ArrowRight } from "lucide-react"; // Opsional: untuk ikon panah
 function Layanan() {
   const navigate = useNavigate();
 
-  const daftarLayanan = [
-    { id: "laos", title: "Laos", image: "/images/layanan3.jpg" },
-    { id: "morocco", title: "Morocco", image: "/images/layanan4.jpg" },
-    { id: "ethiopia", title: "Ethiopia", image: "/images/layanan1.jpg" },
-    { id: "indonesia", title: "Indonesia", image: "/images/Tari-lolu1.jpg" },
-  ];
+ const daftarLayanan = [
+  // Baris Pertama
+  { id: "laos", title: "Laos", image: "/images/layanan3.jpg" },
+  { id: "morocco", title: "Morocco", image: "/images/layanan4.jpg" },
+  { id: "ethiopia", title: "Ethiopia", image: "/images/layanan1.jpg" },
+  { id: "indonesia", title: "Indonesia", image: "/images/Tari-lolu1.jpg" },
+  
+  // Baris Kedua (Tambahan sesuai permintaan Anda)
+ { title: "Mongolia", image: "/images/Mongolia.jpg" },
+ { title: "Kyrgyzstan ", image: "/images/Kyrgyzstan.jpg" },
+ { title: "Bhutan", image: "/images/Bhutan — Cham Dance.jpg" },    
+];
 
   return (
     <main className="flex-grow bg-white py-16 px-6">

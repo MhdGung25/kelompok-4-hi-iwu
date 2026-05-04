@@ -32,7 +32,7 @@ function ViewGaleri() {
   description: "Indonesia merupakan negara kepulauan yang memiliki keragaman budaya yang sangat luas, dipengaruhi oleh sejarah panjang interaksi antar-etnis, agama, dan tradisi lokal. Kekayaan budaya ini tercermin dalam berbagai praktik sosial dan ritual yang berkembang di tiap daerah. Salah satu wilayah yang memiliki tradisi budaya khas adalah Sulawesi Tenggara, khususnya dalam bentuk Tari Lulo dan Karia Ceremony, yang merepresentasikan dimensi sosial dan spiritual masyarakat setempat.",
   
   // Deskripsi Tari Lulo
-  secondaryDescription: "Tari Lulo merupakan salah satu bentuk ekspresi budaya tradisional yang berasal dari masyarakat Tolaki di Sulawesi Tenggara. Sebagai bagian dari kebudayaan agraris, Tari Lulo telah dipraktikkan secara turun-temurun sejak masa lampau, terutama dalam konteks ritual syukuran setelah panen sebagai wujud rasa terima kasih kepada alam. Dalam perkembangannya, fungsi tarian ini mengalami transformasi dari ritual agraris menjadi sarana interaksi sosial yang lebih luas dalam kehidupan masyarakat.Secara etimologis dan filosofis, Tari Lulo mengandung nilai kebersamaan dan kesetaraan, yang tercermin dari pola formasi lingkaran yang digunakan dalam pertunjukannya. Para peserta—baik laki-laki maupun perempuan dari berbagai usia dan latar belakang—bergabung dalam satu lingkaran dengan saling berpegangan tangan. Formasi ini melambangkan persatuan, solidaritas, serta hubungan harmonis antarindividu dalam komunitas.Gerakan dalam Tari Lulo cenderung sederhana, repetitif, namun ritmis, dengan fokus pada langkah kaki yang bergerak mengikuti irama musik pengiring. Kesederhanaan gerakan ini justru menjadi kekuatan utama, karena memungkinkan siapa saja untuk ikut serta tanpa memerlukan pelatihan khusus. Hal ini menjadikan Tari Lulo sebagai tarian partisipatif, bukan sekadar pertunjukan, melainkan pengalaman kolektif yang melibatkan seluruh peserta. Dari segi musik pengiring, Tari Lulo biasanya diiringi oleh alat musik tradisional maupun modern, seperti gong, gendang, atau bahkan musik elektronik dalam konteks kontemporer. Irama yang dihasilkan bersifat dinamis dan berulang, menciptakan suasana yang hidup dan mendorong keterlibatan aktif dari para peserta.Dalam praktiknya, Tari Lulo sering ditampilkan dalam berbagai acara, seperti perayaan adat, penyambutan tamu, festival budaya, hingga kegiatan sosial masyarakat. Tarian ini juga memiliki fungsi sebagai media komunikasi sosial, di mana interaksi antarindividu terjadi secara alami melalui gerakan dan kebersamaan dalam lingkaran.Dari segi busana, peserta Tari Lulo dapat mengenakan pakaian adat khas Sulawesi Tenggara yang mencerminkan identitas budaya lokal, atau busana sopan dalam konteks acara non-formal. Dalam pertunjukan resmi, penggunaan pakaian adat dengan motif dan warna tertentu menambah nilai estetika serta memperkuat representasi budaya.",
+  secondaryDescription: "Tari Lulo merupakan salah satu bentuk ekspresi budaya tradisional yang berasal dari masyarakat Tolaki di Sulawesi Tenggara. Sebagai bagian dari kebudayaan agraris, Tari Lulo telah dipraktikkan secara turun-temurun sejak masa lampau, terutama dalam konteks ritual syukuran setelah panen sebagai wujud rasa terima kasih kepada alam. Dalam perkembangannya, fungsi tarian ini mengalami transformasi dari ritual agraris menjadi sarana interaksi sosial yang lebih luas dalam kehidupan masyarakat.Secara etimologis dan filosofis, Tari Lulo mengandung nilai kebersamaan dan kesetaraan, yang tercermin dari pola formasi lingkaran yang digunakan dalam pertunjukannya. Para peserta baik laki-laki maupun perempuan dari berbagai usia dan latar belakang bergabung dalam satu lingkaran dengan saling berpegangan tangan. Formasi ini melambangkan persatuan, solidaritas, serta hubungan harmonis antarindividu dalam komunitas.Gerakan dalam Tari Lulo cenderung sederhana, repetitif, namun ritmis, dengan fokus pada langkah kaki yang bergerak mengikuti irama musik pengiring. Kesederhanaan gerakan ini justru menjadi kekuatan utama, karena memungkinkan siapa saja untuk ikut serta tanpa memerlukan pelatihan khusus. Hal ini menjadikan Tari Lulo sebagai tarian partisipatif, bukan sekadar pertunjukan, melainkan pengalaman kolektif yang melibatkan seluruh peserta. Dari segi musik pengiring, Tari Lulo biasanya diiringi oleh alat musik tradisional maupun modern, seperti gong, gendang, atau bahkan musik elektronik dalam konteks kontemporer. Irama yang dihasilkan bersifat dinamis dan berulang, menciptakan suasana yang hidup dan mendorong keterlibatan aktif dari para peserta.Dalam praktiknya, Tari Lulo sering ditampilkan dalam berbagai acara, seperti perayaan adat, penyambutan tamu, festival budaya, hingga kegiatan sosial masyarakat. Tarian ini juga memiliki fungsi sebagai media komunikasi sosial, di mana interaksi antarindividu terjadi secara alami melalui gerakan dan kebersamaan dalam lingkaran.Dari segi busana, peserta Tari Lulo dapat mengenakan pakaian adat khas Sulawesi Tenggara yang mencerminkan identitas budaya lokal, atau busana sopan dalam konteks acara non-formal. Dalam pertunjukan resmi, penggunaan pakaian adat dengan motif dan warna tertentu menambah nilai estetika serta memperkuat representasi budaya.",
   
   // FOTO UNTUK TARI LULO (Akan muncul setelah teks Lulo)
   extraImages: [
@@ -72,6 +72,7 @@ function ViewGaleri() {
       extraImages: [
         "/images/laos-ritual-1.jpg",
         "/images/laos-ritual-2.jpg",
+        "/images/laos-ritual-3.jpg",
       ],
     },
     morocco: {
@@ -154,7 +155,7 @@ function ViewGaleri() {
                 <img
                   src={img}
                   alt={`${data.country} ${index}`}
-                  className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full aspect-[3/4] object-cover transition-transform duration-750 group-hover:scale-110"
                 />
               </div>
             ))}
@@ -171,53 +172,61 @@ function ViewGaleri() {
         )}
 
         {/* --- 5. TAMBAHAN KARIA CEREMONY (GAMBAR & TEKS) --- */}
-        {data.kariaDescription && (
-          <div className="w-full max-w-6xl mx-auto mb-20">
-            {/* Gambar Karia (3 Sejajar) */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              {data.kariaImages?.map((img, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-xl">
-                  <img 
-                    src={img} 
-                    alt="Karia Ceremony" 
-                    className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" 
-                  />
-                </div>
-              ))}
-            </div>
+{data.kariaDescription && (
+  <div className="w-full max-w-6xl mx-auto mb-20">
+    {/* Gambar Otomatis: Jika 1 foto (full), jika 2 foto (setengah), jika 3 (sepertiga) */}
+    <div className={`grid gap-6 mb-10 grid-cols-1 ${
+      data.kariaImages?.length === 2 ? 'md:grid-cols-2' : 
+      data.kariaImages?.length >= 3 ? 'md:grid-cols-3' : ''
+    }`}>
+      {data.kariaImages?.map((img, index) => (
+        <div key={index} className="group relative overflow-hidden rounded-lg shadow-xl">
+          <img 
+            src={img} 
+            alt="Ceremony" 
+            className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" 
+          />
+        </div>
+      ))}
+    </div>
 
-            {/* Teks Deskripsi Karia */}
-            <div className="max-w-4xl mx-auto border-l-4 border-blue-600 pl-6 py-2 bg-gray-50 rounded-r-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3 text-gray-800">Karia Ceremony</h3>
-              <p className="text-lg text-gray-600 leading-relaxed text-justify whitespace-pre-line">
-                {data.kariaDescription}
-              </p>
-            </div>
-          </div>
-        )}
+    {/* Teks Deskripsi */}
+    <div className="max-w-4xl mx-auto border-l-4 border-blue-600 pl-6 py-2 bg-gray-50 rounded-r-lg shadow-sm">
+      <h3 className="text-xl font-bold mb-3 text-gray-800">Karia Ceremony</h3>
+      <p className="text-lg text-gray-600 leading-relaxed text-justify whitespace-pre-line">
+        {data.kariaDescription}
+      </p>
+    </div>
+  </div>
+)}
 
-        {/* 6. VIDEO DOKUMENTASI (DUA SEJAJAR) */}
-        {(data.videos || data.videoUrl) && (
-          <div className="w-full mb-20">
-            <div className="flex items-center justify-center mb-10">
-              <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
-              <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">Dokumentasi Visual</h3>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-              {(data.videos || [data.videoUrl, data.videoUrl2]).filter(Boolean).map((url, idx) => (
-                <div key={idx} className="relative aspect-video shadow-2xl rounded-xl overflow-hidden bg-black">
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src={url}
-                    title={`Video ${idx + 1}`}
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+{/* 6. VIDEO DOKUMENTASI (DINAMIS) */}
+{(data.videos || data.videoUrl) && (
+  <div className="w-full mb-20">
+    <div className="flex items-center justify-center mb-10">
+      <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
+      <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">Dokumentasi Visual</h3>
+    </div>
+    
+    {/* Grid Video Otomatis: Jika cuma 1 video, dia akan di tengah (centered) */}
+    <div className={`grid gap-8 w-full grid-cols-1 ${
+      (data.videos?.length || [data.videoUrl, data.videoUrl2].filter(Boolean).length) >= 2 
+      ? 'md:grid-cols-2' 
+      : 'max-w-3xl mx-auto' 
+    }`}>
+      {(data.videos || [data.videoUrl, data.videoUrl2]).filter(Boolean).map((url, idx) => (
+        <div key={idx} className="relative aspect-video shadow-2xl rounded-xl overflow-hidden bg-black">
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src={url}
+            title={`Video ${idx + 1}`}
+            allowFullScreen
+          ></iframe>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
 
         {/* 7. PERSPEKTIF BUDAYA */}
         {data.culturalPerspective && (

@@ -9,7 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Layanan from "./pages/Layanan";
 import Tentang from "./pages/about";
-// import Kontak from "./pages/Kontak";
+import Kontak from "./pages/contact";
 
 // CSS
 import "./App.css";
@@ -39,7 +39,7 @@ function App() {
             { <Route path="/about" element={<Tentang />} /> }
 
             {/* Kontak */}
-            {/* <Route path="/kontak" element={<Kontak />} /> */}
+            { <Route path="/contact" element={<Kontak />} /> }
 
             {/* Fallback */}
             <Route path="*" element={<Home />} />
