@@ -15,7 +15,8 @@ function Layanan() {
   // Baris Kedua (Tambahan sesuai permintaan Anda)
  { title: "Mongolia", image: "/images/Mongolia.jpg" },
  { title: "Kyrgyzstan ", image: "/images/Kyrgyzstan.jpg" },
- { title: "Bhutan", image: "/images/Bhutan — Cham Dance.jpg" },    
+ { title: "Bhutan", image: "/images/Bhutan — Cham Dance.jpg" },   
+ { title: "Georgia", image: "/images/Georgia — Polyphonic Singing.jpg" }, 
 ];
 
   return (
