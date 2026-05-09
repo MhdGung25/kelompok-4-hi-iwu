@@ -12,11 +12,11 @@ function Layanan() {
   { id: "ethiopia", title: "Ethiopia", image: "/images/layanan1.jpg" },
   { id: "indonesia", title: "Indonesia", image: "/images/Tari-lolu1.jpg" },
   
-  // Baris Kedua (Tambahan sesuai permintaan Anda)
- { title: "Mongolia", image: "/images/Mongolia.jpg" },
- { title: "Kyrgyzstan ", image: "/images/Kyrgyzstan.jpg" },
- { title: "Bhutan", image: "/images/Bhutan — Cham Dance.jpg" },   
- { title: "Georgia", image: "/images/Georgia — Polyphonic Singing.jpg" }, 
+// Baris Kedua (Sekarang sudah punya ID agar link tidak undefined)
+  { id: "mongolia", title: "Mongolia", image: "/images/Mongolia.jpg" },
+  { id: "kyrgyzstan", title: "Kirgistan", image: "/images/Kyrgyzstan.jpg" },
+  { id: "bhutan", title: "Bhutan", image: "/images/Bhutan — Cham Dance.jpg" },   
+  { id: "georgia", title: "Georgia", image: "/images/Georgia — Polyphonic Singing.jpg" },
 ];
 
   return (
@@ -36,36 +36,42 @@ function Layanan() {
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full mb-20">
           {daftarLayanan.map((item) => (
-            <Link
-              to={`/view-galeri/${item.id}`}
-              key={item.id}
-              className="flex flex-col items-start group relative"
-            >
-              <div className="relative w-full overflow-hidden bg-gray-100 rounded-xl shadow-md border border-gray-100">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full aspect-video object-cover object-center transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
-              </div>
+  <Link
+    to={`/view-galeri/${item.id}`} // Sekarang item.id sudah ada semua
+    key={item.id}
+    className="flex flex-col items-start group relative"
+  >
+    {/* Container Gambar */}
+    <div className="relative w-full overflow-hidden bg-gray-100 rounded-xl shadow-md border border-gray-100">
+      <img
+        src={item.image}
+        alt={item.title}
+        className="w-full h-full aspect-video object-cover object-center transition-transform duration-700 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+    </div>
 
-              <div className="mt-5 w-full">
-                <h3 className="text-xl font-bold text-gray-900 tracking-tight group-hover:text-blue-600 transition-colors">
-                  {item.title}
-                </h3>
-                <div className="h-1 w-12 bg-blue-600 mt-2 transition-all duration-500 group-hover:w-20"></div>
-                <div className="mt-4 flex items-center overflow-hidden">
-                  <span className="text-[11px] font-bold text-blue-600 uppercase tracking-[0.2em]">
-                    View Gallery
-                  </span>
-                  <span className="ml-2 text-blue-600 transition-all duration-300 transform -translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
-                    →
-                  </span>
-                </div>
-              </div>
-            </Link>
-          ))}
+    {/* Info Teks */}
+    <div className="mt-5 w-full">
+      <h3 className="text-xl font-bold text-gray-900 tracking-tight group-hover:text-blue-600 transition-colors">
+        {item.title}
+      </h3>
+      
+      {/* Garis biru di bawah judul */}
+      <div className="h-1 w-12 bg-blue-600 mt-2 transition-all duration-500 group-hover:w-20"></div>
+      
+      {/* Tombol Lihat Galeri */}
+      <div className="mt-4 flex items-center overflow-hidden">
+        <span className="text-[11px] font-bold text-blue-600 uppercase tracking-[0.2em]">
+          LIHAT GALERI {/* Teks diubah ke Bahasa Indonesia sesuai gambar */}
+        </span>
+        <span className="ml-2 text-blue-600 transition-all duration-300 transform -translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100">
+          →
+        </span>
+      </div>
+    </div>
+  </Link>
+))}
         </div>
 
         {/* --- BAGIAN BARU: GO BEHIND THE STAGE --- */}

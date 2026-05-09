@@ -92,6 +92,33 @@ function ViewGaleri() {
       "/images/Morocco-3.jpg",
     ],
   },
+  // TAMBAHKAN DATA BARU DI SINI:
+mongolia: {
+  country: "Mongolia", // Tambahkan country agar teks Hero muncul
+  mainTitle: "MONGOLIA",
+  mainImage: "/images/Mongolia.jpg", // Pastikan M besar sesuai screenshot
+  description: "Menjelajahi tradisi nomaden dan festival Naadam di padang rumput Mongolia.",
+},
+kyrgyzstan: {
+  country: "Kirgistan",
+  mainTitle: "KIRGISTAN",
+  mainImage: "/images/Kyrgyzstan.jpg", // Pastikan K besar sesuai screenshot
+  description: "Kebudayaan berkuda dan tradisi elang pemburu di pegunungan Tian Shan.",
+},
+bhutan: {
+  country: "Bhutan",
+  mainTitle: "BHUTAN",
+  // Gunakan encodeURIComponent untuk spasi dan dash agar aman di browser
+  mainImage: "/images/Bhutan%20%E2%80%94%20Cham%20Dance.jpg", 
+  description: "Tarian topeng Cham yang sakral dan filosofi kebahagiaan nasional Bhutan.",
+},
+georgia: {
+  country: "Georgia",
+  mainTitle: "GEORGIA",
+  // Gunakan nama file yang lengkap sesuai yang ada di folder kamu
+  mainImage: "/images/Georgia%20%E2%80%94%20Polyphonic%20Singing.jpg",
+  description: "Nyanyian polifonik kuno dan tradisi pembuatan wine tertua di dunia.",
+},
   };
 
   const data = kontenBudaya[id] ?? kontenBudaya.laos;
