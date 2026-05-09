@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 
 function Contact() {
   const extraImages = [
+      "/images/temen-rahma-2.jpg",
+     "/images/temen-rahma-3.jpg",
     "/images/rahma.jpg",
     "/images/temen-rahma.jpg",
     "/images/temen-rahma-1.jpg",
-    "/images/temen-rahma-2.jpg",
-    "/images/temen-rahma-3.jpg",
+   "/images/temen-rahma-5.jpg",
     "/images/temen-rahma-4.jpg",
+     "/images/rahma.jpg",
+    "/images/temen-rahma.jpg",
     "/images/temen-rahma-5.jpg",
   ];
 
