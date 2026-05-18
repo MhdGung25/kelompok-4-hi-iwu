@@ -51,8 +51,8 @@ function Navbar() {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
        <a href="/" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Beranda</a>
           <a href="/layanan" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Layanan</a>
-          <a href="#" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Tentang Kami</a>
-          <a href="#" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Kontak</a>
+          <a href="/about" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Tentang Kami</a>
+          <a href="/contact" className="block px-3 py-3 rounded-md text-base font-bold hover:bg-white/10">Kontak</a>
         </div>
       </div>
     </nav>
