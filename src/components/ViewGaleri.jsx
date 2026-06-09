@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, MapPin, PlayCircle } from "lucide-react"; // Tambah icon PlayCircle
+import { ArrowLeft, MapPin, PlayCircle } from "lucide-react";
 
 function ViewGaleri() {
   const { id } = useParams();
@@ -10,15 +10,17 @@ function ViewGaleri() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [id]);
 
-  const kontenBudaya = {
+ const kontenBudaya = {
     ethiopia: {
       country: "Ethiopia",
       mainTitle: "Warisan Tari Gurage",
       description:
         "Ethiopia merupakan salah satu negara di kawasan Afrika Timur yang dikenal memiliki warisan budaya yang sangat kaya dan beragam, mencerminkan nilai historis, spiritual, serta identitas etnis yang kuat. Berbagai tradisi seperti musik, tarian, dan ritual sosial berkembang dalam kehidupan masyarakatnya. Salah satu bentuk ekspresi budaya yang masih lestari hingga saat ini adalah Eskista Dance, yaitu tarian tradisional khas Ethiopia yang menonjolkan gerakan bahu, leher, dan dada secara cepat dan ritmis.Eskista telah berkembang sejak berabad-abad lalu sebagai bagian dari kehidupan sosial masyarakat Ethiopia, terutama dalam komunitas Amhara dan Tigray. Tarian ini biasanya ditampilkan dalam berbagai acara seperti perayaan adat, festival budaya, upacara pernikahan, serta pertemuan sosial lainnya. Eskista dapat dilakukan oleh laki-laki maupun perempuan, baik secara individu maupun berkelompok, sebagai bentuk ekspresi kegembiraan, identitas budaya, dan solidaritas sosial.",
-        secondaryDescription:"Salah satu ciri khas utama Eskista terletak pada teknik gerakan tubuh bagian atas yang intens dan terkoordinasi, terutama pada bahu yang digerakkan secara cepat mengikuti irama musik tradisional. Gerakan ini sering dipadukan dengan langkah kaki dan ekspresi wajah yang energik, menciptakan pertunjukan yang unik dan menarik secara visual. Dari segi kostum, penari biasanya mengenakan pakaian tradisional Ethiopia seperti habesha kemis (gaun putih dengan bordir khas) untuk perempuan, serta pakaian adat sederhana dengan aksen kain tenun untuk laki-laki, yang memperkuat identitas budaya dalam pertunjukan tersebut.",
-         videoUrl: "https://www.youtube.com/embed/aaIrEAatWTg", // Format embed agar bisa tampil
-      culturalPerspective:"Dalam perspektif budaya massa dan budaya populer, Eskista Dance pada dasarnya bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan secara luas dalam industri hiburan global. Tarian ini bersifat lokal dan berakar kuat pada tradisi masyarakat tertentu. Namun demikian, perkembangan digitalisasi telah membawa perubahan signifikan dalam cara budaya ini dikenal oleh dunia luar.Melalui platform digital seperti TikTok dan YouTube, Eskista Dance kini mulai muncul dalam bentuk konten visual yang dapat diakses oleh audiens global. Gerakan yang unik dan ekspresif menjadikan tarian ini mudah menarik perhatian dalam format video pendek maupun pertunjukan digital.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu mengangkat budaya lokal ke dalam ruang global. Dalam konteks ini, batas antara budaya tradisional dan budaya populer menjadi semakin cair, di mana praktik budaya seperti Eskista mulai bertransformasi dari tradisi lokal menjadi bagian dari konsumsi budaya global.",
+      secondaryDescription:
+        "Salah satu ciri khas utama Eskista terletak pada teknik gerakan tubuh bagian atas yang intens dan terkoordinasi, terutama pada bahu yang digerakkan secara cepat mengikuti irama musik tradisional. Gerakan ini sering dipadukan dengan langkah kaki dan ekspresi wajah yang energik, menciptakan pertunjukan yang unik dan menarik secara visual. Dari segi kostum, penari biasanya mengenakan pakaian tradisional Ethiopia seperti habesha kemis (gaun putih dengan bordir khas) untuk perempuan, serta pakaian adat sederhana dengan aksen kain tenun untuk laki-laki, yang memperkuat identitas budaya dalam pertunjukan tersebut.",
+      videoUrl: "https://www.youtube.com/embed/aaIrEAatWTg",
+      culturalPerspective:
+        "Dalam perspektif budaya massa dan budaya populer, Eskista Dance pada dasarnya bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan secara luas dalam industri hiburan global. Tarian ini bersifat lokal dan berakar kuat pada tradisi masyarakat tertentu. Namun demikian, perkembangan digitalisasi telah membawa perubahan signifikan dalam cara budaya ini dikenal oleh dunia luar.Melalui platform digital seperti TikTok dan YouTube, Eskista Dance kini mulai muncul dalam bentuk konten visual yang dapat diakses oleh audiens global. Gerakan yang unik dan ekspresif menjadikan tarian ini mudah menarik perhatian dalam format video pendek maupun pertunjukan digital.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu mengangkat budaya lokal ke dalam ruang global. Dalam konteks ini, batas antara budaya tradisional dan budaya populer menjadi semakin cair, di mana praktik budaya seperti Eskista mulai bertransformasi dari tradisi lokal menjadi bagian dari konsumsi budaya global.",
       mainImage: "/images/Ethiopia.jpg",
       extraImages: [
         "/images/ethiopia-1.jpg",
@@ -27,37 +29,32 @@ function ViewGaleri() {
       ],
     },
     indonesia: {
-  country: "Indonesia",
-  mainTitle: "TARI LULO DAN KARIA CEREMONY",
-  description: "Indonesia merupakan negara kepulauan yang memiliki keragaman budaya yang sangat luas, dipengaruhi oleh sejarah panjang interaksi antar-etnis, agama, dan tradisi lokal. Kekayaan budaya ini tercermin dalam berbagai praktik sosial dan ritual yang berkembang di tiap daerah. Salah satu wilayah yang memiliki tradisi budaya khas adalah Sulawesi Tenggara, khususnya dalam bentuk Tari Lulo dan Karia Ceremony, yang merepresentasikan dimensi sosial dan spiritual masyarakat setempat.",
-  
-  // Deskripsi Tari Lulo
-  secondaryDescription: "Tari Lulo merupakan salah satu bentuk ekspresi budaya tradisional yang berasal dari masyarakat Tolaki di Sulawesi Tenggara. Sebagai bagian dari kebudayaan agraris, Tari Lulo telah dipraktikkan secara turun-temurun sejak masa lampau, terutama dalam konteks ritual syukuran setelah panen sebagai wujud rasa terima kasih kepada alam. Dalam perkembangannya, fungsi tarian ini mengalami transformasi dari ritual agraris menjadi sarana interaksi sosial yang lebih luas dalam kehidupan masyarakat.Secara etimologis dan filosofis, Tari Lulo mengandung nilai kebersamaan dan kesetaraan, yang tercermin dari pola formasi lingkaran yang digunakan dalam pertunjukannya. Para peserta baik laki-laki maupun perempuan dari berbagai usia dan latar belakang bergabung dalam satu lingkaran dengan saling berpegangan tangan. Formasi ini melambangkan persatuan, solidaritas, serta hubungan harmonis antarindividu dalam komunitas.Gerakan dalam Tari Lulo cenderung sederhana, repetitif, namun ritmis, dengan fokus pada langkah kaki yang bergerak mengikuti irama musik pengiring. Kesederhanaan gerakan ini justru menjadi kekuatan utama, karena memungkinkan siapa saja untuk ikut serta tanpa memerlukan pelatihan khusus. Hal ini menjadikan Tari Lulo sebagai tarian partisipatif, bukan sekadar pertunjukan, melainkan pengalaman kolektif yang melibatkan seluruh peserta. Dari segi musik pengiring, Tari Lulo biasanya diiringi oleh alat musik tradisional maupun modern, seperti gong, gendang, atau bahkan musik elektronik dalam konteks kontemporer. Irama yang dihasilkan bersifat dinamis dan berulang, menciptakan suasana yang hidup dan mendorong keterlibatan aktif dari para peserta.Dalam praktiknya, Tari Lulo sering ditampilkan dalam berbagai acara, seperti perayaan adat, penyambutan tamu, festival budaya, hingga kegiatan sosial masyarakat. Tarian ini juga memiliki fungsi sebagai media komunikasi sosial, di mana interaksi antarindividu terjadi secara alami melalui gerakan dan kebersamaan dalam lingkaran.Dari segi busana, peserta Tari Lulo dapat mengenakan pakaian adat khas Sulawesi Tenggara yang mencerminkan identitas budaya lokal, atau busana sopan dalam konteks acara non-formal. Dalam pertunjukan resmi, penggunaan pakaian adat dengan motif dan warna tertentu menambah nilai estetika serta memperkuat representasi budaya.",
-  
-  // FOTO UNTUK TARI LULO (Akan muncul setelah teks Lulo)
-  extraImages: [
-    "/images/Tari-lolu2.jpg",
-    "/images/Tari-lolu3.jpg",
-    "/images/Tari-lolu4.jpg",
-  ],
-
-  // --- TAMBAHAN UNTUK MENGISI BAGIAN PANAH MERAH ---
-  kariaDescription: "Sementara itu, Karia Ceremony merupakan salah satu ritual adat yang berasal dari masyarakat Buton, Sulawesi Tenggara, yang memiliki makna penting dalam struktur sosial dan budaya setempat. Tradisi ini telah ada sejak masa Kesultanan Buton dan diwariskan secara turun-temurun sebagai bagian dari sistem nilai yang mengatur kehidupan masyarakat.Karia Ceremony berfungsi sebagai ritus peralihan (rite of passage) yang menandai proses kedewasaan perempuan. Ritual ini tidak hanya menjadi simbol perubahan status individu, tetapi juga merupakan bentuk pengakuan sosial dari masyarakat terhadap kesiapan seseorang dalam menjalani peran dan tanggung jawab sebagai anggota komunitas yang lebih dewasa.Dalam perspektif budaya massa dan budaya populer, baik Tari Lulo maupun Karia Ceremony bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan dalam industri hiburan global. Keduanya berakar kuat pada konteks lokal, dengan fungsi utama yang bersifat sosial dan spiritual, bukan sebagai komoditas hiburan.Namun demikian, perkembangan digitalisasi telah membuka ruang baru bagi kedua budaya ini untuk dikenal lebih luas. Melalui platform digital seperti TikTok dan YouTube, dokumentasi Tari Lulo yang bersifat interaktif serta Karia Ceremony yang sarat makna simbolik mulai dapat diakses oleh audiens global.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu menghubungkan budaya lokal dengan ruang global. Dalam konteks ini, praktik budaya yang sebelumnya terbatas pada komunitas tertentu kini memiliki potensi untuk menjadi bagian dari konsumsi budaya global, tanpa harus kehilangan nilai dan identitas aslinya.",
-  
-  kariaImages: [
-    "/images/Tari-lolu5.jpg",
-    "/images/Tari-lolu6.jpg",
-    "/images/Tari-lolu7.jpg",
-  ],
-  // ------------------------------------------------
-
-  culturalPerspective: "Dalam perspektif budaya massa dan budaya populer, baik Tari Lulo maupun Karia Ceremony bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan dalam industri hiburan global. Keduanya berakar kuat pada konteks lokal, dengan fungsi utama yang bersifat sosial dan spiritual, bukan sebagai komoditas hiburan.Namun demikian, perkembangan digitalisasi telah membuka ruang baru bagi kedua budaya ini untuk dikenal lebih luas. Melalui platform digital seperti TikTok dan YouTube, dokumentasi Tari Lulo yang bersifat interaktif serta Karia Ceremony yang sarat makna simbolik mulai dapat diakses oleh audiens global.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu menghubungkan budaya lokal dengan ruang global. Dalam konteks ini, praktik budaya yang sebelumnya terbatas pada komunitas tertentu kini memiliki potensi untuk menjadi bagian dari konsumsi budaya global, tanpa harus kehilangan nilai dan identitas aslinya.",
-  mainImage: "/images/Tari-lolu-1.jpg",
-  videos: [
-    "https://www.youtube.com/embed/Zvnf8o5tajY",
-    "https://www.youtube.com/embed/VQHLS_QKs2I"
-  ]
-},
+      country: "Indonesia",
+      mainTitle: "TARI LULO DAN KARIA CEREMONY",
+      description:
+        "Indonesia merupakan negara kepulauan yang memiliki keragaman budaya yang sangat luas, dipengaruhi oleh sejarah panjang interaksi antar-etnis, agama, dan tradisi lokal. Kekayaan budaya ini tercermin dalam berbagai praktik sosial dan ritual yang berkembang di tiap daerah. Salah satu wilayah yang memiliki tradisi budaya khas adalah Sulawesi Tenggara, khususnya dalam bentuk Tari Lulo dan Karia Ceremony, yang merepresentasikan dimensi sosial dan spiritual masyarakat setempat.",
+      secondaryDescription:
+        "Tari Lulo merupakan salah satu bentuk ekspresi budaya tradisional yang berasal dari masyarakat Tolaki di Sulawesi Tenggara. Sebagai bagian dari kebudayaan agraris, Tari Lulo telah dipraktikkan secara turun-temurun sejak masa lampau, terutama dalam konteks ritual syukuran setelah panen sebagai wujud rasa terima kasih kepada alam. Dalam perkembangannya, fungsi tarian ini mengalami transformasi dari ritual agraris menjadi sarana interaksi sosial yang lebih luas dalam kehidupan masyarakat.Secara etimologis dan filosofis, Tari Lulo mengandung nilai kebersamaan dan kesetaraan, yang tercermin dari pola formasi lingkaran yang digunakan dalam pertunjukannya. Para peserta baik laki-laki maupun perempuan dari berbagai usia dan latar belakang bergabung dalam satu lingkaran dengan saling berpegangan tangan. Formasi ini melambangkan persatuan, solidaritas, serta hubungan harmonis antarindividu dalam komunitas.Gerakan dalam Tari Lulo cenderung sederhana, repetitif, namun ritmis, dengan fokus pada langkah kaki yang bergerak mengikuti irama musik pengiring. Kesederhanaan gerakan ini justru menjadi kekuatan utama, karena memungkinkan siapa saja untuk ikut serta tanpa memerlukan pelatihan khusus. Hal ini menjadikan Tari Lulo sebagai tarian partisipatif, bukan sekadar pertunjukan, melainkan pengalaman kolektif yang melibatkan seluruh peserta. Dari segi musik pengiring, Tari Lulo biasanya diiringi oleh alat musik tradisional maupun modern, seperti gong, gendang, atau bahkan musik elektronik dalam konteks kontemporer. Irama yang dihasilkan bersifat dinamis dan berulang, menciptakan suasana yang hidup dan mendorong keterlibatan aktif dari para peserta.Dalam praktiknya, Tari Lulo sering ditampilkan dalam berbagai acara, seperti perayaan adat, penyambutan tamu, festival budaya, hingga kegiatan sosial masyarakat. Tarian ini juga memiliki fungsi sebagai media komunikasi sosial, di mana interaksi antarindividu terjadi secara alami melalui gerakan dan kebersamaan dalam lingkaran.Dari segi busana, peserta Tari Lulo dapat mengenakan pakaian adat khas Sulawesi Tenggara yang mencerminkan identitas budaya lokal, atau busana sopan dalam konteks acara non-formal. Dalam pertunjukan resmi, penggunaan pakaian adat dengan motif dan warna tertentu menambah nilai estetika serta memperkuat representasi budaya.",
+      extraImages: [
+        "/images/Tari-lolu2.jpg",
+        "/images/Tari-lolu3.jpg",
+        "/images/Tari-lolu4.jpg",
+      ],
+      kariaDescription:
+        "Sementara itu, Karia Ceremony merupakan salah satu ritual adat yang berasal dari masyarakat Buton, Sulawesi Tenggara, yang memiliki makna penting dalam struktur sosial dan budaya setempat. Tradisi ini telah ada sejak masa Kesultanan Buton dan diwariskan secara turun-temurun sebagai bagian dari sistem nilai yang mengatur kehidupan masyarakat.Karia Ceremony berfungsi sebagai ritus peralihan (rite of passage) yang menandai proses kedewasaan perempuan. Ritual ini tidak hanya menjadi simbol perubahan status individu, tetapi juga merupakan bentuk pengakuan sosial dari masyarakat terhadap kesiapan seseorang dalam menjalani peran dan tanggung jawab sebagai anggota komunitas yang lebih dewasa.Dalam perspektif budaya massa dan budaya populer, baik Tari Lulo maupun Karia Ceremony bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan dalam industri hiburan global. Keduanya berakar kuat pada konteks lokal, dengan fungsi utama yang bersifat sosial dan spiritual, bukan sebagai komoditas hiburan.Namun demikian, perkembangan digitalisasi telah membuka ruang baru bagi kedua budaya ini untuk dikenal lebih luas. Melalui platform digital seperti TikTok dan YouTube, dokumentasi Tari Lulo yang bersifat interaktif serta Karia Ceremony yang sarat makna simbolik mulai dapat diakses oleh audiens global.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu menghubungkan budaya lokal dengan ruang global. Dalam konteks ini, praktik budaya yang sebelumnya terbatas pada komunitas tertentu kini memiliki potensi untuk menjadi bagian dari konsumsi budaya global, tanpa harus kehilangan nilai dan identitas aslinya.",
+      kariaImages: [
+        "/images/Tari-lolu5.jpg",
+        "/images/Tari-lolu6.jpg",
+        "/images/Tari-lolu7.jpg",
+      ],
+      culturalPerspective:
+        "Dalam perspektif budaya massa dan budaya populer, baik Tari Lulo maupun Karia Ceremony bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan dalam industri hiburan global. Keduanya berakar kuat pada konteks lokal, dengan fungsi utama yang bersifat sosial dan spiritual, bukan sebagai komoditas hiburan.Namun demikian, perkembangan digitalisasi telah membuka ruang baru bagi kedua budaya ini untuk dikenal lebih luas. Melalui platform digital seperti TikTok dan YouTube, dokumentasi Tari Lulo yang bersifat interaktif serta Karia Ceremony yang sarat makna simbolik mulai dapat diakses oleh audiens global.Fenomena ini menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu menghubungkan budaya lokal dengan ruang global. Dalam konteks ini, praktik budaya yang sebelumnya terbatas pada komunitas tertentu kini memiliki potensi untuk menjadi bagian dari konsumsi budaya global, tanpa harus kehilangan nilai dan identitas aslinya.",
+      mainImage: "/images/Tari-lolu-1.jpg",
+      videos: [
+        "https://www.youtube.com/embed/Zvnf8o5tajY",
+        "https://www.youtube.com/embed/VQHLS_QKs2I",
+      ],
+    },
     laos: {
       country: "Laos",
       mainTitle: "Baci Ceremony",
@@ -65,9 +62,9 @@ function ViewGaleri() {
         "Laos merupakan negara yang memiliki beragam kekayaan budaya yang mencerminkan nilai spiritual dan tradisi masyarakatnya. Salah satu budaya yang masih lestari hingga saat ini adalah Baci Ceremony, yaitu ritual tradisional yang bertujuan untuk menjaga keseimbangan jiwa serta memperkuat hubungan antara individu dengan lingkungan sosial dan spiritualnya. Ritual ini memiliki akar yang dalam dalam kepercayaan masyarakat Laos, terutama di kalangan suku-suku yang mendiami wilayah tersebut. Baci Ceremony sering kali dilakukan pada momen-momen penting seperti pernikahan, kelahiran, atau saat seseorang mengalami perubahan besar dalam hidupnya.",
       secondaryDescription:
         "Dalam pelaksanaannya, Baci Ceremony dilaksanakan melalui rangkaian doa bersama yang dipimpin oleh tokoh adat. Dalam prosesi ini, benang putih diikatkan pada pergelangan tangan sebagai simbol perlindungan dan keseimbangan hidup. Praktik ini tidak hanya bersifat spiritual, tetapi juga mencerminkan nilai kebersamaan dalam kehidupan masyarakat Laos.",
-       videoUrl: "https://www.youtube.com/embed/ZABBTXMXfAI", // Format embed agar bisa tampil
+      videoUrl: "https://www.youtube.com/embed/ZABBTXMXfAI",
       culturalPerspective:
-        " Dalam perspektif budaya massa dan budaya populer, Baci Ceremony pada dasarnya bukan merupakan bagian dari budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan untuk konsumsi global. Ritual ini bersifat lokal, sakral, dan terbatas pada komunitas tertentu. Namun, melalui perkembangan digitalisasi, praktik budaya seperti Baci Ceremony mulai mengalami transformasi menjadi bagian dari budaya massa dalam bentuk representasi digital.Melalui platform seperti YouTube dan TikTok, dokumentasi visual dari ritual ini dapat diakses oleh audiens global. Dalam konteks ini, digitalisasi berperan sebagai medium yang mengubah budaya lokal menjadi konten yang dapat dikonsumsi secara luas, meskipun tanpa menghilangkan nilai tradisional yang melekat.Fenomena ini menunjukkan bahwa batas antara budaya tradisional dan budaya populer menjadi semakin kabur. Digitalisasi tidak hanya menyebarkan budaya populer arus utama, tetapi juga membuka ruang bagi budaya lokal yang sebelumnya tidak terekspos untuk masuk ke dalam ekosistem global.",
+        " Dalam perspektif budaya massa dan budaya populer, Baci Ceremony pada dasarnya bukan merupakan bagian dari budaya populer karena tidak diproduksi secara massal maupun dikomersialisasikan untuk konsumsi global. Ritual ini bersifat lokal, sakral, dan terbatas pada komunitas tertentu. Namun, melalui perkembangan digitalisasi, praktik budaya seperti Baci Ceremony mulai mengalami transformação menjadi bagian dari budaya massa dalam bentuk representation digital.Melalui platform seperti YouTube dan TikTok, dokumentasi visual dari ritual ini dapat diakses oleh audiens global. Dalam konteks ini, digitalisasi berperan sebagai medium yang mengubah budaya lokal menjadi konten yang dapat dikonsumsi secara luas, meskipun tanpa menghilangkan nilai tradisional yang melekat.Fenomena ini menunjukkan bahwa batas antara budaya tradisional dan budaya populer menjadi semakin kabur. Digitalisasi tidak hanya menyebarkan budaya populer arus utama, tetapi juga membuka ruang bagi budaya lokal yang sebelumnya tidak terekspos untuk masuk ke dalam ekosistem global.",
       mainImage: "/images/layanan5.jpg",
       extraImages: [
         "/images/laos-ritual-1.jpg",
@@ -76,54 +73,75 @@ function ViewGaleri() {
       ],
     },
     morocco: {
-    country: "Morocco",
-    mainTitle: "Ritme Musik Gnawa",
-    description:
-      "Morocco merupakan negara di kawasan Afrika Utara yang dikenal dengan kekayaan budaya hasil pertemuan berbagai peradaban, seperti Arab, Berber (Amazigh), dan Afrika Sub-Sahara. Keberagaman ini tercermin dalam berbagai bentuk ekspresi budaya, mulai dari arsitektur, kuliner, hingga musik tradisional. Salah satu warisan budaya yang masih lestari hingga saat ini adalah Gnawa Music.\n\nGnawa Music merupakan tradisi musik spiritual yang berkembang sejak sekitar abad ke-16, berakar dari komunitas keturunan Afrika Sub-Sahara yang dibawa ke wilayah Morocco. Musik ini awalnya digunakan sebagai bagian dari praktik spiritual dan ritual penyembuhan, yang kemudian berkembang menjadi identitas budaya komunitas Gnawa.",
-    secondaryDescription: 
-      "Secara umum, Gnawa Music dimainkan oleh para musisi yang disebut “Maâlem” (pemimpin musik) bersama kelompoknya. Mereka menggunakan instrumen tradisional seperti guembri (alat musik petik) dan qraqeb (alat musik perkusi logam) yang menghasilkan ritme repetitif khas. Musik ini biasanya ditampilkan dalam upacara spiritual yang dikenal sebagai “lila”, yaitu ritual malam hari yang bertujuan untuk penyembuhan, refleksi spiritual, dan menjaga keseimbangan batin.\n\nDalam pertunjukannya, para pemain Gnawa mengenakan pakaian tradisional yang khas, seperti jellaba atau gandoura (jubah panjang) yang dihiasi dengan warna-warna cerah dan simbol-simbol tertentu. Selain itu, mereka sering menggunakan topi khas yang dilengkapi dengan hiasan rumbai atau tassel yang bergerak mengikuti irama musik, menciptakan kesan visual yang dinamis. Pakaian ini tidak hanya berfungsi sebagai identitas budaya, tetapi juga memiliki makna simbolik yang berkaitan dengan spiritualitas dan tradisi komunitas Gnawa.",
-    videoUrl: "https://www.youtube.com/embed/9wfdX2N1RA0",
-    culturalPerspective:
-      "Dalam perspektif budaya massa dan budaya populer, Gnawa Music pada dasarnya bukan merupakan budaya populer karena tidak diproduksi secara massal untuk konsumsi global, melainkan memiliki fungsi spiritual dan komunitas yang kuat. Namun, seiring perkembangan digitalisasi, Gnawa mulai mengalami transformasi menjadi bagian dari budaya massa dalam bentuk konten digital dan pertunjukan global.\n\nMelalui platform seperti YouTube dan Spotify, musik Gnawa kini dapat diakses oleh audiens internasional dan bahkan berkolaborasi dengan genre musik modern. Hal ini menunjukkan bahwa digitalisasi berperan sebagai medium yang menghubungkan tradisi lokal dengan pasar global.\n\nFenomena ini memperlihatkan bahwa batas antara budaya tradisional dan budaya populer menjadi semakin dinamis, di mana praktik budaya yang awalnya bersifat lokal dan spiritual dapat bertransformasi menjadi bagian dari konsumsi budaya global tanpa sepenuhnya kehilangan identitas aslinya.",
-    mainImage: "/images/Morocco.jpg",
-    extraImages: [
-      "/images/Morocco-1.jpg",
-      "/images/Morocco-2.jpg",
-      "/images/Morocco-3.jpg",
-    ],
-  },
-  // TAMBAHKAN DATA BARU DI SINI:
-mongolia: {
-  country: "Mongolia", // Tambahkan country agar teks Hero muncul
-  mainTitle: "MONGOLIA",
-  mainImage: "/images/Mongolia.jpg", // Pastikan M besar sesuai screenshot
-  description: "Menjelajahi tradisi nomaden dan festival Naadam di padang rumput Mongolia.",
+      country: "Morocco",
+      mainTitle: "Ritme Musik Gnawa",
+      description:
+        "Morocco merupakan negara di kawasan Afrika Utara yang dikenal dengan kekayaan budaya hasil pertemuan berbagai peradaban, seperti Arab, Berber (Amazigh), dan Afrika Sub-Sahara. Keberagaman ini tercermin dalam berbagai bentuk ekspresi budaya, mulai dari arsitektur, kuliner, hingga musik tradisional. Salah satu warisan budaya yang masih lestari hingga saat ini adalah Gnawa Music.\n\nGnawa Music merupakan tradisi musik spiritual yang berkembang sejak sekitar abad ke-16, berakar dari komunitas keturunan Afrika Sub-Sahara yang dibawa ke wilayah Morocco. Musik ini awalnya digunakan sebagai bagian dari praktik spiritual dan ritual penyembuhan, yang kemudian berkembang menjadi identitas budaya komunitas Gnawa.",
+      secondaryDescription:
+        "Secara umum, Gnawa Music dimainkan oleh para musisi yang disebut “Maâlem” (pemimpin musik) bersama kelompoknya. Mereka menggunakan instrumen tradisional seperti guembri (alat musik petik) dan qraqeb (alat musik perkusi logam) yang menghasilkan ritme repetitif khas. Musik ini biasanya ditampilkan dalam upacara spiritual yang dikenal sebagai “lila”, yaitu ritual malam hari yang bertujuan untuk penyembuhan, refleksi spiritual, dan menjaga keseimbangan batin.\n\nDalam pertunjukannya, para pemain Gnawa mengenakan pakaian tradisional yang khas, seperti jellaba atau gandoura (jubah panjang) yang dihiasi dengan warna-warna cerah dan simbol-simbol tertentu. Selain itu, mereka sering menggunakan topi khas yang dilengkapi dengan hiasan rumbai atau tassel yang bergerak mengikuti irama musik, menciptakan kesan visual yang dinamis. Pakaian ini tidak hanya berfungsi sebagai identitas budaya, tetapi juga memiliki makna simbolik yang berkaitan dengan spiritualitas dan tradisi komunitas Gnawa.",
+      videoUrl: "https://www.youtube.com/embed/9wfdX2N1RA0",
+      culturalPerspective:
+        "Dalam perspektif budaya massa dan budaya populer, Gnawa Music pada dasarnya bukan merupakan budaya populer karena tidak diproduksi secara massal untuk konsumsi global, melainkan memiliki fungsi spiritual dan komunitas yang kuat. Namun, seiring perkembangan digitalisasi, Gnawa mulai mengalami transformasi menjadi bagian dari budaya massa dalam bentuk konten digital dan pertunjukan global.\n\nMelalui platform seperti YouTube dan Spotify, musik Gnawa kini dapat diakses oleh audiens internasional dan bahkan berkolaborasi dengan genre musik modern. Hal ini menunjukkan bahwa digitalisasi berperan sebagai medium yang menghubungkan tradisi lokal dengan pasar global.\n\nFenomena ini memperlihatkan bahwa batas antara budaya tradisional dan budaya populer menjadi semakin dinamis, di mana praktik budaya yang awalnya bersifat lokal and spiritual dapat bertransformasi menjadi bagian dari konsumsi budaya global tanpa sepenuhnya kehilangan identitas aslinya.",
+      mainImage: "/images/Morocco.jpg",
+      extraImages: [
+        "/images/Morocco-1.jpg",
+        "/images/Morocco-2.jpg",
+        "/images/Morocco-3.jpg",
+      ],
+    },
+    mongolia: {
+      country: "Mongolia",
+      mainTitle: "MONGOLIA",
+      mainImage: "/images/Mongolia.jpg",
+      description:
+        "Menjelajahi tradisi nomaden dan festival Naadam di padang rumput Mongolia.",
+    },
+   kyrgyzstan: {
+  country: "Kyrgyzstan",
+  mainTitle: "Eagle Hunting",
+  description:
+    "Kyrgyzstan merupakan negara yang terletak di Asia Tengah dan dikenal dengan bentang alam pegunungan yang luas serta tradisi nomaden yang masih kuat hingga saat ini. Sejak berabad-abad lalu, masyarakat Kyrgyz hidup berdampingan dengan alam dan mengembangkan berbagai praktik budaya yang membantu mereka bertahan hidup di lingkungan pegunungan yang keras. Salah satu warisan budaya yang paling unik dan masih dilestarikan hingga kini adalah Eagle Hunting atau tradisi berburu menggunakan elang emas (golden eagle).",
+  
+  secondaryDescription:
+    "Tradisi Eagle Hunting diperkirakan telah ada sejak lebih dari seribu tahun yang lalu dan diwariskan secara turun-temurun oleh masyarakat nomaden di Asia Tengah. Dalam budaya Kyrgyz, berburu dengan elang bukan sekadar aktivitas mencari makanan, tetapi juga merupakan simbol keterampilan, keberanian, kesabaran, dan hubungan harmonis antara manusia dengan alam. Tradisi ini menjadi bagian penting dari identitas budaya masyarakat Kyrgyz dan mencerminkan pengetahuan lokal yang diwariskan dari generasi ke generasi.\n\n" +
+    "Pelaku tradisi ini dikenal sebagai Bürkütçü, yaitu pemburu yang melatih dan bekerja sama dengan elang emas untuk berburu hewan seperti rubah, kelinci, dan hewan kecil lainnya. Proses melatih seekor elang membutuhkan waktu bertahun-tahun dan didasarkan pada hubungan saling percaya antara pemburu dan burung tersebut. Karena tingkat kesulitannya yang tinggi, keterampilan ini biasanya diwariskan dalam lingkungan keluarga dan komunitas tertentu.\n\n" +
+    "Eagle Hunting biasanya ditampilkan dalam festival budaya, kompetisi tradisional, perayaan nasional, serta berbagai acara pelestarian budaya di Kyrgyzstan. Salah satu acara yang paling terkenal adalah festival berburu tradisional yang mempertemukan para pemburu elang dari berbagai wilayah untuk menunjukkan kemampuan mereka dalam mengendalikan dan bekerja sama dengan burung pemangsa tersebut.\n\n" +
+    "Dalam pertunjukan maupun kegiatan berburu tradisional, para pemburu mengenakan pakaian khas nomaden Kyrgyz yang dirancang untuk menghadapi cuaca pegunungan yang dingin. Pakaian tersebut biasanya terdiri dari mantel berbahan kulit atau wol, sepatu bot tinggi, serta topi tradisional yang disebut kalpak, yang menjadi simbol identitas nasional Kyrgyzstan. Sementara itu, elang emas yang digunakan sering kali mengenakan penutup mata khusus sebelum dilepaskan untuk berburu.",
+  
+  videoUrl: "https://www.youtube.com/embed/aA-48GJMAwY",
+  
+  culturalPerspective:
+    "Dalam perspektif budaya massa dan budaya populer, Eagle Hunting bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikembangkan sebagai bagian dari industri hiburan global. Tradisi ini berakar kuat pada kehidupan masyarakat nomaden dan memiliki fungsi praktis serta simbolik yang jauh melampaui sekadar hiburan. Oleh karena itu, eksistensinya lebih dekat dengan budaya tradisional yang diwariskan secara turun-temurun.\n\n" +
+    "Namun demikian, perkembangan digitalisasi telah membawa perubahan besar dalam tingkat visibilitas budaya ini. Melalui dokumentasi foto, film dokumenter, dan konten video yang diunggah ke platform seperti YouTube, TikTok, serta berbagai media digital lainnya, tradisi Eagle Hunting mulai dikenal oleh masyarakat internasional. Visual yang menampilkan pemburu berkuda di pegunungan dengan elang emas di lengannya menjadi daya tarik yang kuat bagi audiens global.\n\n" +
+    "Digitalisasi tidak hanya membantu memperkenalkan Eagle Hunting kepada dunia, tetapi juga berkontribusi dalam upaya pelestarian budaya tersebut. Melalui media digital, generasi muda dan masyarakat internasional dapat mempelajari nilai-nilai budaya yang terkandung di dalamnya tanpa harus mengunjungi Kyrgyzstan secara langsung. Dengan demikian, Eagle Hunting menjadi contoh bagaimana teknologi dapat berfungsi sebagai panggung tak kasat mata yang menghubungkan warisan budaya lokal dengan audiens global.",
+  
+  mainImage: "/images/Kyrgyzstan.jpg",
+  extraImages: [
+    "/images/kyrgyzstan-1.jpg",
+    "/images/kyrgyzstan-2.jpg",
+    "/images/kyrgyzstan-3.jpg",
+  ],
 },
-kyrgyzstan: {
-  country: "Kirgistan",
-  mainTitle: "KIRGISTAN",
-  mainImage: "/images/Kyrgyzstan.jpg", // Pastikan K besar sesuai screenshot
-  description: "Kebudayaan berkuda dan tradisi elang pemburu di pegunungan Tian Shan.",
-},
-bhutan: {
-  country: "Bhutan",
-  mainTitle: "BHUTAN",
-  // Gunakan encodeURIComponent untuk spasi dan dash agar aman di browser
-  mainImage: "/images/Bhutan%20%E2%80%94%20Cham%20Dance.jpg", 
-  description: "Tarian topeng Cham yang sakral dan filosofi kebahagiaan nasional Bhutan.",
-},
-georgia: {
-  country: "Georgia",
-  mainTitle: "GEORGIA",
-  // Gunakan nama file yang lengkap sesuai yang ada di folder kamu
-  mainImage: "/images/Georgia%20%E2%80%94%20Polyphonic%20Singing.jpg",
-  description: "Nyanyian polifonik kuno dan tradisi pembuatan wine tertua di dunia.",
-},
+    bhutan: {
+      country: "Bhutan",
+      mainTitle: "BHUTAN",
+      mainImage: "/images/Bhutan%20%E2%80%94%20Cham%20Dance.jpg",
+      description:
+        "Tarian topeng Cham yang sakral dan filosofi kebahagiaan nasional Bhutan.",
+    },
+    georgia: {
+      country: "Georgia",
+      mainTitle: "GEORGIA",
+      mainImage: "/images/Georgia%20%E2%80%94%20Polyphonic%20Singing.jpg",
+      description:
+        "Nyanyian polifonik kuno dan tradisi pembuatan wine tertua di dunia.",
+    },
   };
 
-  const data = kontenBudaya[id] ?? kontenBudaya.laos;
+  // Gunakan ID berhuruf kecil agar tidak sensitif huruf besar-kecil
+  const data = kontenBudaya[id?.toLowerCase()] ?? kontenBudaya.laos;
 
- return (
+  return (
     <main className="min-h-screen bg-white font-sans text-gray-900">
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md py-4 px-6 border-b border-gray-100 flex justify-between items-center">
@@ -158,7 +176,6 @@ georgia: {
 
       {/* 2. CONTENT CONTAINER */}
       <section className="max-w-6xl mx-auto py-24 px-8 flex flex-col items-center">
-        
         {/* Judul Utama */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight text-gray-900 italic">
@@ -174,11 +191,14 @@ georgia: {
           </p>
         </div>
 
-        {/* 3. GALLERY IMAGES (Tari Lulo) */}
+        {/* 3. GALLERY IMAGES */}
         {data.extraImages?.length > 0 && (
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
             {data.extraImages.map((img, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-lg shadow-xl">
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-lg shadow-xl"
+              >
                 <img
                   src={img}
                   alt={`${data.country} ${index}`}
@@ -189,7 +209,7 @@ georgia: {
           </div>
         )}
 
-        {/* 4. DESKRIPSI SEKUNDER (Tari Lulo) */}
+        {/* 4. DESKRIPSI SEKUNDER */}
         {data.secondaryDescription && (
           <div className="max-w-4xl mx-auto mb-20">
             <p className="text-lg text-gray-500 leading-relaxed text-justify whitespace-pre-line">
@@ -198,62 +218,76 @@ georgia: {
           </div>
         )}
 
-        {/* --- 5. TAMBAHAN KARIA CEREMONY (GAMBAR & TEKS) --- */}
-{data.kariaDescription && (
-  <div className="w-full max-w-6xl mx-auto mb-20">
-    {/* Gambar Otomatis: Jika 1 foto (full), jika 2 foto (setengah), jika 3 (sepertiga) */}
-    <div className={`grid gap-6 mb-10 grid-cols-1 ${
-      data.kariaImages?.length === 2 ? 'md:grid-cols-2' : 
-      data.kariaImages?.length >= 3 ? 'md:grid-cols-3' : ''
-    }`}>
-      {data.kariaImages?.map((img, index) => (
-        <div key={index} className="group relative overflow-hidden rounded-lg shadow-xl">
-          <img 
-            src={img} 
-            alt="Ceremony" 
-            className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110" 
-          />
-        </div>
-      ))}
-    </div>
+        {/* 5. TAMBAHAN KARIA CEREMONY (GAMBAR & TEKS) */}
+        {data.kariaDescription && (
+          <div className="w-full max-w-6xl mx-auto mb-20">
+            <div
+              className={`grid gap-6 mb-10 grid-cols-1 ${
+                data.kariaImages?.length === 2
+                  ? "md:grid-cols-2"
+                  : data.kariaImages?.length >= 3
+                  ? "md:grid-cols-3"
+                  : ""
+              }`}
+            >
+              {data.kariaImages?.map((img, index) => (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-lg shadow-xl"
+                >
+                  <img
+                    src={img}
+                    alt="Ceremony"
+                    className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+              ))}
+            </div>
 
-    {/* Teks Deskripsi */}
-    <div className="max-w-4xl mx-auto border-l-4 border-blue-600 pl-6 py-2 bg-gray-50 rounded-r-lg shadow-sm">
-      <h3 className="text-xl font-bold mb-3 text-gray-800">Karia Ceremony</h3>
-      <p className="text-lg text-gray-600 leading-relaxed text-justify whitespace-pre-line">
-        {data.kariaDescription}
-      </p>
-    </div>
-  </div>
-)}
+            <div className="max-w-4xl mx-auto border-l-4 border-blue-600 pl-6 py-2 bg-gray-50 rounded-r-lg shadow-sm">
+              <h3 className="text-xl font-bold mb-3 text-gray-800">
+                Karia Ceremony
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed text-justify whitespace-pre-line">
+                {data.kariaDescription}
+              </p>
+            </div>
+          </div>
+        )}
 
-{/* 6. VIDEO DOKUMENTASI (DINAMIS) */}
-{(data.videos || data.videoUrl) && (
-  <div className="w-full mb-20">
-    <div className="flex items-center justify-center mb-10">
-      <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
-      <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">Dokumentasi Visual</h3>
-    </div>
-    
-    {/* Grid Video Otomatis: Jika cuma 1 video, dia akan di tengah (centered) */}
-    <div className={`grid gap-8 w-full grid-cols-1 ${
-      (data.videos?.length || [data.videoUrl, data.videoUrl2].filter(Boolean).length) >= 2 
-      ? 'md:grid-cols-2' 
-      : 'max-w-3xl mx-auto' 
-    }`}>
-      {(data.videos || [data.videoUrl, data.videoUrl2]).filter(Boolean).map((url, idx) => (
-        <div key={idx} className="relative aspect-video shadow-2xl rounded-xl overflow-hidden bg-black">
-          <iframe
-            className="absolute inset-0 w-full h-full"
-            src={url}
-            title={`Video ${idx + 1}`}
-            allowFullScreen
-          ></iframe>
-        </div>
-      ))}
-    </div>
-  </div>
-)}
+        {/* 6. VIDEO DOKUMENTASI (DINAMIS) */}
+        {(data.videos || data.videoUrl) && (
+          <div className="w-full mb-20">
+            <div className="flex items-center justify-center mb-10">
+              <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
+              <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">
+                Dokumentasi Visual
+              </h3>
+            </div>
+
+            <div
+              className={`grid gap-8 w-full grid-cols-1 ${
+                (data.videos?.length || [data.videoUrl].filter(Boolean).length) >= 2
+                  ? "md:grid-cols-2"
+                  : "max-w-3xl mx-auto"
+              }`}
+            >
+              {(data.videos || [data.videoUrl]).filter(Boolean).map((url, idx) => (
+                <div
+                  key={idx}
+                  className="relative aspect-video shadow-2xl rounded-xl overflow-hidden bg-black"
+                >
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src={url}
+                    title={`Video ${idx + 1}`}
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* 7. PERSPEKTIF BUDAYA */}
         {data.culturalPerspective && (
