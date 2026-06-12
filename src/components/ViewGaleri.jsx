@@ -89,13 +89,34 @@ function ViewGaleri() {
         "/images/Morocco-3.jpg",
       ],
     },
-    mongolia: {
-      country: "Mongolia",
-      mainTitle: "MONGOLIA",
-      mainImage: "/images/Mongolia.jpg",
-      description:
-        "Menjelajahi tradisi nomaden dan festival Naadam di padang rumput Mongolia.",
-    },
+ mongolia: {
+  country: "Mongolia",
+  mainTitle: "Throat Singing (Khoomei)",
+  description:
+    "Mongolia merupakan negara yang terletak di Asia Timur dan dikenal dengan sejarah panjang kehidupan masyarakat nomaden yang hidup berdampingan dengan alam. Selama berabad-abad, masyarakat Mongolia mengembangkan berbagai tradisi budaya yang mencerminkan hubungan erat antara manusia, lingkungan, dan spiritualitas. Salah satu warisan budaya yang paling unik dan masih lestari hingga saat ini adalah Throat Singing atau Khoomei, yaitu teknik vokal tradisional yang memungkinkan seorang penyanyi menghasilkan dua atau lebih nada secara bersamaan dalam satu waktu.",
+  
+  secondaryDescription:
+    " Khoomei atau Throat Singing merupakan salah satu warisan budaya paling khas dari Mongolia yang telah dipraktikkan selama berabad-abad oleh masyarakat nomaden di wilayah stepa, gurun, dan Pegunungan Altai. Tradisi ini berkembang dari kehidupan masyarakat yang sangat dekat dengan alam. Bagi masyarakat Mongolia, alam bukan sekadar tempat tinggal, melainkan bagian dari kehidupan spiritual yang harus dihormati dan dijaga. Oleh karena itu, berbagai unsur alam seperti suara angin yang berhembus di padang rumput, gemericik sungai pegunungan, kicauan burung, hingga suara hewan ternak menjadi sumber inspirasi utama dalam perkembangan teknik vokal Khoomei.\n\n" +
+    "Secara historis, Khoomei telah dikenal sejak masa Kekaisaran Mongolia dan diwariskan secara lisan dari generasi ke generasi. Tradisi ini banyak berkembang di wilayah Mongolia Barat, khususnya Pegunungan Altai, yang dikenal sebagai pusat perkembangan seni vokal tersebut. Dalam kehidupan masyarakat nomaden, Khoomei tidak hanya berfungsi sebagai hiburan, tetapi juga menjadi sarana untuk mengekspresikan rasa syukur, penghormatan terhadap alam, serta identitas budaya komunitas. Oleh karena itu, nyanyian ini sering ditampilkan dalam berbagai kegiatan sosial, festival budaya, perayaan tradisional, hingga upacara adat tertentu.\n\n" +
+    "Keunikan utama Khoomei terletak pada kemampuannya menghasilkan dua atau lebih nada secara bersamaan. Teknik ini dilakukan dengan mengontrol pernapasan, posisi lidah, rongga mulut, tenggorokan, dan resonansi suara secara sangat presisi. Saat bernyanyi, seorang penyanyi menghasilkan nada dasar yang rendah dan dalam, kemudian memanipulasi resonansi suara sehingga muncul nada tinggi yang terdengar seperti siulan. Kombinasi kedua nada tersebut menciptakan efek suara yang unik dan sering kali menyerupai suara alam.\n\n " +
+    "Dalam perkembangannya, Khoomei memiliki beberapa gaya atau teknik yang berbeda. Salah satunya adalah Sygyt, yang menghasilkan nada tinggi menyerupai siulan burung. Teknik Kargyraa menghasilkan suara yang lebih dalam dan berat, menyerupai gemuruh angin atau suara pegunungan. Sementara itu, teknik Borbangnadyr menciptakan efek suara bergetar yang menyerupai aliran sungai. Setiap teknik memiliki karakteristik tersendiri dan mencerminkan hubungan masyarakat Mongolia dengan lingkungan alam di sekitarnya.\n\n" +
+    "Tradisi Khoomei umumnya dipelajari sejak usia muda melalui proses pembelajaran langsung dari anggota keluarga atau guru seni tradisional. Dahulu, teknik ini lebih banyak dibawakan oleh laki-laki karena dianggap memerlukan kekuatan pernapasan yang besar. Namun, seiring perkembangan zaman, semakin banyak perempuan Mongolia yang turut mempelajari dan mempertunjukkan Khoomei, sehingga tradisi ini menjadi lebih inklusif tanpa menghilangkan nilai budayanya.\n\n" +
+    "Dalam setiap pertunjukan, Khoomei sering diiringi oleh alat musik tradisional Mongolia yang disebut Morin Khuur atau Horsehead Fiddle. Alat musik gesek ini memiliki dua senar dan kepala berbentuk kuda pada bagian atasnya. Kuda memiliki posisi yang sangat penting dalam kehidupan masyarakat Mongolia karena menjadi simbol kebebasan, kekuatan, dan identitas budaya nomaden. Oleh karena itu, Morin Khuur tidak hanya berfungsi sebagai alat musik pengiring, tetapi juga sebagai simbol hubungan antara manusia, alam, dan tradisi yang diwariskan turun-temurun.\n\n" +
+    "Para penampil Khoomei biasanya mengenakan pakaian tradisional Mongolia yang disebut Deel, yaitu jubah panjang yang dirancang untuk menghadapi iklim ekstrem di wilayah Mongolia. Deel umumnya dibuat dari bahan wol, sutra, atau katun tebal dan dilengkapi dengan ikat pinggang berwarna cerah. Warna serta motif yang digunakan sering kali menunjukkan identitas daerah, status sosial, atau acara yang sedang berlangsung. Selain Deel, para penampil juga mengenakan sepatu bot kulit khas Mongolia dan topi tradisional yang menambah kesan autentik dalam pertunjukan budaya tersebut.",
+  videoUrl: "https://www.youtube.com/embed/EOpUZ9uAKz0", // Ganti dengan URL embed video Mongolia yang kamu punya
+  
+  culturalPerspective:
+    "Dalam perspektif budaya massa dan budaya populer, Throat Singing bukan merupakan budaya populer karena tidak diproduksi secara massal maupun dikembangkan sebagai bagian dari industri hiburan global. Tradisi ini berakar kuat pada komunitas lokal dan diwariskan secara turun-temurun sebagai bagian dari identitas budaya masyarakat Mongolia. Oleh karena itu, eksistensinya lebih dekat dengan budaya tradisional daripada budaya populer yang berorientasi pada pasar.\n\n" +
+    "Dengan adanya perkembangan teknologi digital telah membuka peluang baru bagi Throat Singing untuk dikenal oleh masyarakat internasional. Melalui platform digital seperti YouTube, TikTok, dan Spotify, rekaman pertunjukan Khoomei kini dapat diakses oleh audiens dari berbagai negara. Beberapa musisi bahkan menggabungkan teknik Throat Singing dengan musik modern, sehingga menarik perhatian generasi muda dan memperluas jangkauan budaya ini ke tingkat global\n\n" +
+    "Fenomena tersebut menunjukkan bahwa digitalisasi berperan sebagai medium yang mampu menghubungkan budaya lokal dengan audiens internasional. Tradisi yang sebelumnya hanya dikenal dalam komunitas tertentu kini dapat dipelajari, diapresiasi, dan didokumentasikan secara lebih luas. Dalam konteks ini, Throat Singing menjadi contoh bagaimana teknologi digital dapat membantu melestarikan sekaligus memperkenalkan warisan budaya tradisional kepada dunia tanpa menghilangkan nilai dan identitas aslinya.",
+  
+  mainImage: "/images/Mongolia.jpg",
+  extraImages: [
+    "/images/mongolia-1.jpg", // Pastikan nama file gambar ini sesuai di folder public/images kamu
+    "/images/mongolia-2.jpg",
+    "/images/mongolia-3.jpg",
+  ],
+},
    kyrgyzstan: {
   country: "Kyrgyzstan",
   mainTitle: "Eagle Hunting",
@@ -122,199 +143,259 @@ function ViewGaleri() {
     "/images/kyrgyzstan-3.jpg",
   ],
 },
-    bhutan: {
-      country: "Bhutan",
-      mainTitle: "BHUTAN",
-      mainImage: "/images/Bhutan%20%E2%80%94%20Cham%20Dance.jpg",
-      description:
-        "Tarian topeng Cham yang sakral dan filosofi kebahagiaan nasional Bhutan.",
-    },
-    georgia: {
-      country: "Georgia",
-      mainTitle: "GEORGIA",
-      mainImage: "/images/Georgia%20%E2%80%94%20Polyphonic%20Singing.jpg",
-      description:
-        "Nyanyian polifonik kuno dan tradisi pembuatan wine tertua di dunia.",
-    },
+ bhutan: {
+  country: "Bhutan",
+  mainTitle: "Cham Dance",
+  description:
+    "Bhutan merupakan sebuah negara kecil yang terletak di kawasan Pegunungan Himalaya, Asia Selatan. Negara ini dikenal karena keberhasilannya menjaga tradisi, budaya, dan nilai-nilai spiritual di tengah arus modernisasi global. Sebagian besar masyarakat Bhutan menganut agama Buddha Vajrayana, yang memiliki pengaruh kuat terhadap kehidupan sosial, budaya, dan sistem pemerintahan negara tersebut. Salah satu warisan budaya yang paling penting dan masih dilestarikan hingga saat ini adalah Cham Dance, yaitu tarian ritual bertopeng yang menjadi bagian dari tradisi keagamaan masyarakat Bhutan.\n\n" +
+    "Pertunjukan Cham Dance biasanya ditampilkan dalam festival keagamaan yang dikenal sebagai Tshechu, yaitu perayaan tahunan yang diselenggarakan di berbagai biara dan dzong (benteng-biara) di Bhutan. Festival ini menjadi salah satu acara budaya dan spiritual terbesar di negara tersebut, di mana masyarakat berkumpul untuk berdoa, menerima berkah, dan menyaksikan berbagai pertunjukan ritual. Oleh karena itu, Cham Dance memiliki peran penting dalam menjaga kesinambungan ajaran agama sekaligus memperkuat identitas budaya masyarakat Bhutan.\n\n" +
+    "Para penampil Cham Dance umumnya adalah biksu Buddha atau anggota komunitas yang telah mendapatkan pelatihan khusus. Mereka membawakan tarian dengan gerakan yang terstruktur dan simbolis, yang masing-masing memiliki makna tertentu dalam ajaran Buddha. Setiap gerakan, putaran, dan langkah dalam tarian dirancang untuk menggambarkan kisah-kisah spiritual, kemenangan kebaikan atas kejahatan, serta perjalanan manusia menuju pencerahan.",
+  
+  secondaryDescription:
+    "Tarian Cham diperkirakan telah dipraktikkan sejak abad ke-8 dan diperkenalkan oleh Guru Padmasambhava sebagai media untuk membersihkan energi negatif serta menyebarkan ajaran Dharma. Dalam budaya Bhutan, Cham Dance bukan sekadar seni pertunjukan estetis, melainkan bentuk meditasi aktif dan ritual penyembuhan spiritual bagi komunitas. Setiap gerakan penari yang dinamis, berputar, dan menghentak bumi melambangkan penaklukan kekuatan jahat dan pembawa berkah kedamaian bagi para penontonnya.\n\n" +
+    "Seni tari sakral ini biasanya ditampilkan selama festival keagamaan tahunan yang disebut Tshechu, yang diadakan di berbagai benteng biara (Dzong) di seluruh penjuru Bhutan. Para penari, yang terdiri dari para biksu maupun masyarakat awam yang telah disucikan, mengenakan kostum sutra brokat yang megah dengan warna-warni cerah. Musik pengiringnya menggunakan instrumen tradisional biara seperti terompet panjang (dungchen), simbal (rom), dan gendang (nga), menciptakan atmosfer ritmis yang mistis.\n\n" +
+    "Ciri khas utama dari Cham Dance terletak pada penggunaan topeng kayu berukuran besar yang diukir dengan sangat detail. Topeng-topeng ini merepresentasikan berbagai wujud dewa pelindung, makhluk mitologis, serta manifestasi spiritual yang menakutkan namun penuh kebijaksanaan. Bagi masyarakat Bhutan, menyaksikan tarian topeng ini diyakini sebagai bentuk ibadah yang dapat menghapus dosa-dosa dan memberikan pencerahan batin.",
+  
+  // Catatan: Gunakan URL embed YouTube resmi untuk video agar berjalan di iframe.
+  // Contoh di bawah menggunakan dua video contoh YouTube embed agar sejajar & tidak blank.
+  videoUrl: "https://www.youtube.com/embed/O3FNSuMzv0U", 
+  VideoUrl2: "https://www.youtube.com/embed/O3FNSuMzv0U", 
+  
+  culturalPerspective:
+    "Di tengah perkembangan dunia modern, Cham Dance menghadapi tantangan untuk tetap mempertahankan nilai-nilai tradisionalnya. Generasi muda Bhutan kini hidup di era yang semakin terhubung dengan budaya global, sehingga pelestarian tradisi menjadi isu penting bagi masyarakat setempat. Oleh karena itu, berbagai festival budaya dan kegiatan pendidikan terus dilakukan untuk menjaga keberlangsungan tarian ini sebagai bagian dari identitas nasional Bhutan.\n\n" +
+    "Menariknya, kehadiran teknologi digital turut memberikan dimensi baru bagi pelestarian Cham Dance. Dokumentasi visual yang tersebar melalui internet memungkinkan masyarakat internasional mengenal kekayaan budaya Bhutan tanpa harus hadir secara langsung dalam festival keagamaan. Visual topeng yang penuh warna, kostum yang megah, serta suasana sakral dalam pertunjukan menjadikan Cham Dance salah satu representasi budaya Bhutan yang paling mudah dikenali dalam ruang digital.\n\n" +
+    "Perkembangan teknologi telah memberikan ruang baru bagi Cham Dance untuk dikenal oleh masyarakat di berbagai belahan dunia. Melalui dokumentasi foto, video, dan berbagai platform digital, tarian yang sarat akan nilai spiritual ini kini dapat dipelajari, diapresiasi, serta menjadi sumber pengetahuan mengenai budaya Bhutan. Tradisi yang dahulu hanya dapat disaksikan secara langsung dalam festival keagamaan dan lingkungan biara kini dapat diakses oleh khalayak yang lebih luas tanpa batas geografis. Kehadiran media digital tidak hanya memperluas jangkauan informasi budaya, tetapi juga mendukung upaya pelestarian warisan tradisional sekaligus meningkatkan kesadaran masyarakat global akan pentingnya menjaga keberagaman budaya di tengah arus modernisasi.",
+  
+  mainImage: "/images/BhutanDance.jpg",
+  extraImages: [
+    "/images/bhutan-1.jpg", 
+    "/images/bhutan-2.jpg",
+    "/images/bhutan-3.jpg",
+    "/images/bhutan-4.jpg",
+  ],
+},
+   georgia: {
+  country: "Georgia",
+  mainTitle: "Polyphonic Singing",
+  description:
+    "Georgia merupakan negara yang terletak di kawasan Kaukasus, di perbatasan antara Eropa Timur dan Asia Barat. Negara ini memiliki sejarah peradaban yang panjang dan dikenal karena kekayaan budaya, tradisi, serta seni musik yang diwariskan dari generasi ke generasi. Salah satu warisan budaya yang paling khas dan menjadi identitas masyarakat Georgia adalah Polyphonic Singing, yaitu teknik bernyanyi dengan beberapa suara yang dinyanyikan secara bersamaan untuk menciptakan harmoni yang kompleks dan unik.",
+  
+  secondaryDescription:
+    "Tradisi Polyphonic Singing telah berkembang selama berabad-abad dan diperkirakan telah dipraktikkan sejak masa awal pembentukan masyarakat Georgia. Berbeda dengan paduan suara modern, nyanyian polifonik Georgia memiliki struktur vokal yang khas, di mana setiap penyanyi membawakan melodi yang berbeda namun tetap saling melengkapi. Kombinasi berbagai lapisan suara tersebut menghasilkan harmoni yang kuat dan menjadi ciri utama musik tradisional Georgia.\n\n" +
+    "Para pelaku Polyphonic Singing berasal dari berbagai kalangan masyarakat, baik laki-laki maupun perempuan. Namun, dalam beberapa wilayah pedesaan Georgia, tradisi ini secara historis lebih banyak dibawakan oleh kelompok laki-laki. Setiap daerah di Georgia memiliki gaya polyphonic yang berbeda, sehingga menciptakan keragaman musikal yang memperkaya identitas budaya nasional mereka.\n\n" +
+    "Dalam pertunjukannya, para penyanyi umumnya mengenakan pakaian tradisional Georgia yang disebut Chokha, yaitu pakaian khas berbentuk mantel panjang dengan desain elegan yang telah menjadi simbol identitas nasional Georgia. Pada acara tertentu, penampilan juga diiringi oleh alat musik tradisional seperti panduri dan chonguri yang menambah kekayaan musikal dalam pertunjukan.\n\n" +
+    "Keunikan Polyphonic Singing terletak pada kemampuannya menyatukan berbagai suara yang berbeda menjadi satu harmoni yang selaras. Tradisi ini mencerminkan nilai kerja sama, keseimbangan, dan persatuan yang telah menjadi bagian dari kehidupan masyarakat Georgia selama berabad-abad. Karena nilai historis dan budayanya yang tinggi, tradisi ini diakui oleh UNESCO sebagai salah satu warisan budaya takbenda dunia.",
+  
+  // Menyiapkan 2 video embed YouTube agar sejajar berdampingan di mode laptop
+  videoUrl: "https://www.youtube.com/embed/rg8xrdbnH8E", 
+  VideoUrl2: "https://www.youtube.com/embed/mBadsrJ_gzo", 
+  
+  culturalPerspective:
+    "Di era digital, Polyphonic Singing mulai memperoleh perhatian yang lebih luas melalui berbagai platform musik dan media sosial. Rekaman pertunjukan, festival budaya, dan kolaborasi dengan musisi modern memungkinkan tradisi ini dikenal oleh audiens internasional yang sebelumnya tidak familiar dengan budaya Georgia. Meskipun masih relatif kurang dikenal di Indonesia, kehadiran konten musik global telah membantu memperkenalkan keunikan harmoni vokal Georgia kepada masyarakat dari berbagai negara.\n\n" +
+    "Perkembangan teknologi dan platform musik digital telah membantu memperluas jangkauan Polyphonic Singing hingga ke berbagai belahan dunia. Melalui rekaman pertunjukan, festival budaya, serta konten musik yang dibagikan secara daring, tradisi vokal yang telah diwariskan selama berabad-abad ini kini dapat dinikmati oleh audiens yang jauh lebih luas. Kehadiran media digital tidak hanya memperkenalkan keunikan harmoni khas Georgia kepada masyarakat internasional, tetapi juga menjadi sarana pertukaran budaya yang memungkinkan orang dari berbagai latar belakang untuk mengenal dan mengapresiasi warisan musik tradisional tersebut. Dengan demikian, digitalisasi turut mendukung upaya pelestarian Polyphonic Singing agar tetap dikenal, dipelajari, dan relevan di tengah perkembangan teknologi serta arus globalisasi.",
+  
+  mainImage: "/images/Georgia%20%E2%80%94%20Polyphonic%20Singing.jpg",
+  extraImages: [
+    "/images/georgia-1.jpg", // Otomatis sejajar 3 kolom di laptop karena berisi 3 gambar
+    "/images/georgia-2.jpg",
+    "/images/georgia-3.jpg",
+  ],
+},
   };
 
   // Gunakan ID berhuruf kecil agar tidak sensitif huruf besar-kecil
   const data = kontenBudaya[id?.toLowerCase()] ?? kontenBudaya.laos;
 
-  return (
-    <main className="min-h-screen bg-white font-sans text-gray-900">
-      {/* Navbar */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md py-4 px-6 border-b border-gray-100 flex justify-between items-center">
-        <button
-          onClick={() => navigate("/layanan")}
-          className="flex items-center text-[10px] font-bold uppercase tracking-[0.2em] hover:text-blue-600 transition-colors"
+ return (
+  <main className="min-h-screen bg-white font-sans text-gray-900">
+    {/* Navbar */}
+    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md py-4 px-6 border-b border-gray-100 flex justify-between items-center">
+      <button
+        onClick={() => navigate("/layanan")}
+        className="flex items-center text-[10px] font-bold uppercase tracking-[0.2em] hover:text-blue-600 transition-colors"
+      >
+        <ArrowLeft className="w-4 h-4 mr-2" /> Kembali ke Layanan
+      </button>
+
+      <div className="flex items-center text-gray-400">
+        <MapPin className="w-3 h-3 mr-1.5 text-blue-600" />
+        <span className="text-[10px] font-black uppercase tracking-[0.3em]">
+          {data.country}
+        </span>
+      </div>
+    </nav>
+
+    {/* 1. HERO SECTION */}
+    <section className="relative w-full h-[65vh] md:h-[80vh] overflow-hidden bg-gray-900">
+      <img
+        src={data.mainImage}
+        alt={data.country}
+        className="w-full h-full object-cover opacity-75"
+      />
+      <div className="absolute inset-0 flex items-center justify-center p-6">
+        <h1 className="text-6xl md:text-[10rem] font-black text-white uppercase tracking-tighter leading-none drop-shadow-2xl select-none">
+          {data.country}
+        </h1>
+      </div>
+    </section>
+
+    {/* 2. CONTENT CONTAINER */}
+    <section className="max-w-6xl mx-auto py-24 px-8 flex flex-col items-center">
+      {/* Judul Utama */}
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight text-gray-900 italic">
+          {data.mainTitle}
+        </h2>
+        <div className="h-1.5 w-24 bg-blue-600 mx-auto"></div>
+      </div>
+
+      {/* Deskripsi Intro */}
+      <div className="max-w-4xl text-center mb-20 space-y-6">
+        <p className="text-lg md:text-xl text-gray-600 leading-relaxed text-justify whitespace-pre-line">
+          {data.description}
+        </p>
+      </div>
+
+      {/* 3. GALLERY IMAGES (Otomatis 3 atau 4 Kolom di Laptop) */}
+      {data.extraImages?.length > 0 && (
+        <div 
+          className={`w-full grid grid-cols-1 gap-6 mb-20 ${
+            data.extraImages.length === 4 
+              ? "md:grid-cols-4" 
+              : "md:grid-cols-3"
+          }`}
         >
-          <ArrowLeft className="w-4 h-4 mr-2" /> Kembali ke Layanan
-        </button>
-
-        <div className="flex items-center text-gray-400">
-          <MapPin className="w-3 h-3 mr-1.5 text-blue-600" />
-          <span className="text-[10px] font-black uppercase tracking-[0.3em]">
-            {data.country}
-          </span>
+          {data.extraImages.map((img, index) => (
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-lg shadow-xl"
+            >
+              <img
+                src={img}
+                alt={`${data.country} ${index}`}
+                className="w-full aspect-[3/4] object-cover transition-transform duration-750 group-hover:scale-110"
+              />
+            </div>
+          ))}
         </div>
-      </nav>
+      )}
 
-      {/* 1. HERO SECTION */}
-      <section className="relative w-full h-[65vh] md:h-[80vh] overflow-hidden bg-gray-900">
-        <img
-          src={data.mainImage}
-          alt={data.country}
-          className="w-full h-full object-cover opacity-75"
-        />
-        <div className="absolute inset-0 flex items-center justify-center p-6">
-          <h1 className="text-6xl md:text-[10rem] font-black text-white uppercase tracking-tighter leading-none drop-shadow-2xl select-none">
-            {data.country}
-          </h1>
-        </div>
-      </section>
-
-      {/* 2. CONTENT CONTAINER */}
-      <section className="max-w-6xl mx-auto py-24 px-8 flex flex-col items-center">
-        {/* Judul Utama */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight text-gray-900 italic">
-            {data.mainTitle}
-          </h2>
-          <div className="h-1.5 w-24 bg-blue-600 mx-auto"></div>
-        </div>
-
-        {/* Deskripsi Intro */}
-        <div className="max-w-4xl text-center mb-20 space-y-6">
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed text-justify whitespace-pre-line">
-            {data.description}
+      {/* 4. DESKRIPSI SEKUNDER */}
+      {data.secondaryDescription && (
+        <div className="max-w-4xl mx-auto mb-20">
+          <p className="text-lg text-gray-500 leading-relaxed text-justify whitespace-pre-line">
+            {data.secondaryDescription}
           </p>
         </div>
+      )}
 
-        {/* 3. GALLERY IMAGES */}
-        {data.extraImages?.length > 0 && (
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-            {data.extraImages.map((img, index) => (
+      {/* 5. TAMBAHAN KARIA CEREMONY (GAMBAR & TEKS) */}
+      {data.kariaDescription && (
+        <div className="w-full max-w-6xl mx-auto mb-20">
+          <div
+            className={`grid gap-6 mb-10 grid-cols-1 ${
+              data.kariaImages?.length === 2
+                ? "md:grid-cols-2"
+                : data.kariaImages?.length >= 3
+                ? "md:grid-cols-3"
+                : ""
+            }`}
+          >
+            {data.kariaImages?.map((img, index) => (
               <div
                 key={index}
                 className="group relative overflow-hidden rounded-lg shadow-xl"
               >
                 <img
                   src={img}
-                  alt={`${data.country} ${index}`}
-                  className="w-full aspect-[3/4] object-cover transition-transform duration-750 group-hover:scale-110"
+                  alt="Ceremony"
+                  className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             ))}
           </div>
-        )}
 
-        {/* 4. DESKRIPSI SEKUNDER */}
-        {data.secondaryDescription && (
-          <div className="max-w-4xl mx-auto mb-20">
-            <p className="text-lg text-gray-500 leading-relaxed text-justify whitespace-pre-line">
-              {data.secondaryDescription}
+          <div className="max-w-4xl mx-auto border-l-4 border-blue-600 pl-6 py-2 bg-gray-50 rounded-r-lg shadow-sm">
+            <h3 className="text-xl font-bold mb-3 text-gray-800">
+              Karia Ceremony
+            </h3>
+            <p className="text-lg text-gray-600 leading-relaxed text-justify whitespace-pre-line">
+              {data.kariaDescription}
             </p>
-          </div>
-        )}
-
-        {/* 5. TAMBAHAN KARIA CEREMONY (GAMBAR & TEKS) */}
-        {data.kariaDescription && (
-          <div className="w-full max-w-6xl mx-auto mb-20">
-            <div
-              className={`grid gap-6 mb-10 grid-cols-1 ${
-                data.kariaImages?.length === 2
-                  ? "md:grid-cols-2"
-                  : data.kariaImages?.length >= 3
-                  ? "md:grid-cols-3"
-                  : ""
-              }`}
-            >
-              {data.kariaImages?.map((img, index) => (
-                <div
-                  key={index}
-                  className="group relative overflow-hidden rounded-lg shadow-xl"
-                >
-                  <img
-                    src={img}
-                    alt="Ceremony"
-                    className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                </div>
-              ))}
-            </div>
-
-            <div className="max-w-4xl mx-auto border-l-4 border-blue-600 pl-6 py-2 bg-gray-50 rounded-r-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3 text-gray-800">
-                Karia Ceremony
-              </h3>
-              <p className="text-lg text-gray-600 leading-relaxed text-justify whitespace-pre-line">
-                {data.kariaDescription}
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* 6. VIDEO DOKUMENTASI (DINAMIS) */}
-        {(data.videos || data.videoUrl) && (
-          <div className="w-full mb-20">
-            <div className="flex items-center justify-center mb-10">
-              <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
-              <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">
-                Dokumentasi Visual
-              </h3>
-            </div>
-
-            <div
-              className={`grid gap-8 w-full grid-cols-1 ${
-                (data.videos?.length || [data.videoUrl].filter(Boolean).length) >= 2
-                  ? "md:grid-cols-2"
-                  : "max-w-3xl mx-auto"
-              }`}
-            >
-              {(data.videos || [data.videoUrl]).filter(Boolean).map((url, idx) => (
-                <div
-                  key={idx}
-                  className="relative aspect-video shadow-2xl rounded-xl overflow-hidden bg-black"
-                >
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src={url}
-                    title={`Video ${idx + 1}`}
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* 7. PERSPEKTIF BUDAYA */}
-        {data.culturalPerspective && (
-          <div className="max-w-4xl mx-auto bg-gray-50 p-10 border-l-8 border-blue-600 mb-20 shadow-inner rounded-r-xl">
-            <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-6">
-              Perspektif Budaya & Digitalisasi
-            </h4>
-            <p className="text-gray-700 leading-relaxed italic text-justify whitespace-pre-line">
-              {data.culturalPerspective}
-            </p>
-          </div>
-        )}
-
-        {/* 8. FOOTER DECORATION */}
-        <div className="mt-12 pt-12 border-t border-gray-100 w-full text-center">
-          <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.5em] mb-6">
-            Digital Heritage Experience
-          </p>
-          <div className="flex justify-center space-x-4">
-            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
-            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
-            <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
           </div>
         </div>
-      </section>
-    </main>
-  );
+      )}
+
+      {/* 6. VIDEO DOKUMENTASI (Otomatis Sejajar / Responsive) */}
+      {(data.videos || data.videoUrl || data.VideoUrl2) && (
+        <div className="w-full mb-20">
+          <div className="flex items-center justify-center mb-10">
+            <PlayCircle className="w-8 h-8 text-blue-600 mr-3" />
+            <h3 className="text-sm font-bold uppercase tracking-[0.4em] text-gray-900">
+              Dokumentasi Visual
+            </h3>
+          </div>
+
+          {/* Logika Grid: Jika total video terkumpul >= 2, buat menjadi 2 kolom di laptop */}
+          {(() => {
+            // Gabungkan semua potensi video ke dalam satu array bersih
+            const allVideos = [
+              ...(Array.isArray(data.videos) ? data.videos : []),
+              data.videoUrl,
+              data.VideoUrl2
+            ].filter(Boolean);
+
+            return (
+              <div
+                className={`grid gap-8 w-full grid-cols-1 ${
+                  allVideos.length >= 2 ? "md:grid-cols-2" : "max-w-3xl mx-auto"
+                }`}
+              >
+                {allVideos.map((url, idx) => (
+                  <div
+                    key={idx}
+                    className="relative aspect-video shadow-2xl rounded-xl overflow-hidden bg-black"
+                  >
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src={url}
+                      title={`Video ${idx + 1}`}
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
+        </div>
+      )}
+
+      {/* 7. PERSPEKTIF BUDAYA */}
+      {data.culturalPerspective && (
+        <div className="max-w-4xl mx-auto bg-gray-50 p-10 border-l-8 border-blue-600 mb-20 shadow-inner rounded-r-xl">
+          <h4 className="text-xs font-black uppercase tracking-[0.2em] text-blue-600 mb-6">
+            Perspektif Budaya & Digitalisasi
+          </h4>
+          <p className="text-gray-700 leading-relaxed italic text-justify whitespace-pre-line">
+            {data.culturalPerspective}
+          </p>
+        </div>
+      )}
+
+      {/* 8. FOOTER DECORATION */}
+      <div className="mt-12 pt-12 border-t border-gray-100 w-full text-center">
+        <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.5em] mb-6">
+          Digital Heritage Experience
+        </p>
+        <div className="flex justify-center space-x-4">
+          <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
+          <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
+          <div className="h-1 w-1 bg-blue-600 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+);
 }
 
 export default ViewGaleri;
