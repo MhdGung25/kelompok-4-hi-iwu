@@ -159,7 +159,6 @@ function ViewGaleri() {
   // Catatan: Gunakan URL embed YouTube resmi untuk video agar berjalan di iframe.
   // Contoh di bawah menggunakan dua video contoh YouTube embed agar sejajar & tidak blank.
   videoUrl: "https://www.youtube.com/embed/O3FNSuMzv0U", 
-  VideoUrl2: "https://www.youtube.com/embed/O3FNSuMzv0U", 
   
   culturalPerspective:
     "Di tengah perkembangan dunia modern, Cham Dance menghadapi tantangan untuk tetap mempertahankan nilai-nilai tradisionalnya. Generasi muda Bhutan kini hidup di era yang semakin terhubung dengan budaya global, sehingga pelestarian tradisi menjadi isu penting bagi masyarakat setempat. Oleh karena itu, berbagai festival budaya dan kegiatan pendidikan terus dilakukan untuk menjaga keberlangsungan tarian ini sebagai bagian dari identitas nasional Bhutan.\n\n" +
