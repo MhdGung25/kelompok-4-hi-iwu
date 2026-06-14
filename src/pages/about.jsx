@@ -12,63 +12,69 @@ function About() {
     <main className="relative min-h-screen w-full bg-white overflow-x-hidden">
       
       {/* SECTION 1: HERO */}
-      <section className="relative min-h-screen w-full">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/Behind-the-stage.jpg"
-            alt="Background"
-            className="h-full w-full object-cover object-[70%_center] md:object-center opacity-90 md:opacity-100"
-          />
-          <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] md:backdrop-blur-0 md:bg-transparent md:bg-gradient-to-r md:from-white/90 md:via-white/40 md:to-transparent"></div>
+<section className="relative min-h-screen w-full">
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/images/Behind-the-stage.jpg"
+      alt="Background"
+      // Diubah opacity-100 full agar gambar tidak pudar
+      className="h-full w-full object-cover object-[70%_center] md:object-center opacity-100"
+    />
+    {/* PERBAIKAN OVERLAY: Menghapus backdrop-blur dan gradasi putih, diganti hitam transparan (bg-black/50) */}
+    <div className="absolute inset-0 bg-black/50 pointer-events-none"></div>
+  </div>
+
+  <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-12 md:px-12 md:py-20">
+    <div className="w-full max-w-3xl space-y-8 md:space-y-12">
+      <div className="space-y-3 md:space-y-5">
+        <div className="flex items-center gap-3 md:gap-4">
+          <div className="h-[2px] w-8 md:w-12 bg-[#b8946a]"></div>
+          <span className="text-[10px] md:text-sm font-bold tracking-[0.2em] text-[#b8946a] uppercase">
+            Beyond What You See
+          </span>
         </div>
+        {/* PERBAIKAN TEKS JUDUL: Diubah dari text-[#0f172a] (gelap) ke text-white agar menyala di atas overlay gelap */}
+        <h1 className="text-[48px] xs:text-[56px] sm:text-[70px] md:text-[100px] lg:text-[120px] font-black leading-[0.85] tracking-tighter text-white uppercase drop-shadow-md">
+          BEHIND <br /> 
+          <span className="block mt-1">THE STAGE</span>
+        </h1>
+      </div>
 
-        <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-12 md:px-12 md:py-20">
-          <div className="w-full max-w-3xl space-y-8 md:space-y-12">
-            <div className="space-y-3 md:space-y-5">
-              <div className="flex items-center gap-3 md:gap-4">
-                <div className="h-[2px] w-8 md:w-12 bg-[#b8946a]"></div>
-                <span className="text-[10px] md:text-sm font-bold tracking-[0.2em] text-[#b8946a] uppercase">
-                  Beyond What You See
-                </span>
-              </div>
-              <h1 className="text-[48px] xs:text-[56px] sm:text-[70px] md:text-[100px] lg:text-[120px] font-black leading-[0.85] tracking-tighter text-[#0f172a] uppercase">
-                BEHIND <br /> 
-                <span className="block mt-1">THE STAGE</span>
-              </h1>
-            </div>
+      <div className="space-y-4 md:space-y-6">
+        <div className="h-[3px] w-12 md:w-16 bg-[#b8946a]"></div>
+        {/* PERBAIKAN TEKS DESKRIPSI: Diubah dari text-gray-800 ke text-zinc-200 agar nyaman dibaca */}
+        <p className="max-w-[280px] sm:max-w-md text-lg md:text-2xl font-medium leading-tight md:leading-relaxed text-zinc-200 drop-shadow">
+          Budaya dunia terhubung melalui panggung digital yang tak terlihat.
+        </p>
+      </div>
 
-            <div className="space-y-4 md:space-y-6">
-              <div className="h-[3px] w-12 md:w-16 bg-[#b8946a]"></div>
-              <p className="max-w-[280px] sm:max-w-md text-lg md:text-2xl font-medium leading-tight md:leading-relaxed text-gray-800">
-                Budaya dunia terhubung melalui panggung digital yang tak terlihat.
-              </p>
-            </div>
-
-            <div className="space-y-6 md:space-y-8 pt-2 md:pt-4">
-              <div className="flex items-center gap-4 md:gap-6 group">
-                <div className="flex h-12 w-12 md:h-16 md:w-16 flex-shrink-0 items-center justify-center rounded-full bg-[#1e293b] text-white shadow-lg transition-transform group-hover:scale-110">
-                  <Globe className="h-5 w-5 md:h-7 md:w-7" />
-                </div>
-                <p className="text-[14px] md:text-[16px] font-bold leading-tight text-gray-900">
-                  Platform digital menghubungkan budaya lokal ke audiens global.
-                </p>
-              </div>
-              <div className="flex items-center gap-4 md:gap-6 group">
-                <div className="flex h-12 w-12 md:h-16 md:w-16 flex-shrink-0 items-center justify-center rounded-full bg-[#1e293b] text-white shadow-xl transition-transform group-hover:scale-110">
-                  <Users className="h-5 w-5 md:h-7 md:w-7" />
-                </div>
-                <p className="text-[14px] md:text-[16px] font-bold leading-tight text-gray-900">
-                  Inilah sistem yang membentuk budaya tanpa batas.
-                </p>
-              </div>
-            </div>
+      <div className="space-y-6 md:space-y-8 pt-2 md:pt-4">
+        <div className="flex items-center gap-4 md:gap-6 group">
+          <div className="flex h-12 w-12 md:h-16 md:w-16 flex-shrink-0 items-center justify-center rounded-full bg-[#b8946a] text-white shadow-lg transition-transform group-hover:scale-110">
+            <Globe className="h-5 w-5 md:h-7 md:w-7" />
           </div>
-
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 md:left-12 md:translate-x-0 animate-bounce">
-            <ArrowDown className="text-[#b8946a] w-6 h-6" />
-          </div>
+          {/* PERBAIKAN POIN 1: Diubah ke text-white */}
+          <p className="text-[14px] md:text-[16px] font-bold leading-tight text-white drop-shadow">
+            Platform digital menghubungkan budaya lokal ke audiens global.
+          </p>
         </div>
-      </section>
+        <div className="flex items-center gap-4 md:gap-6 group">
+          <div className="flex h-12 w-12 md:h-16 md:w-16 flex-shrink-0 items-center justify-center rounded-full bg-[#b8946a] text-white shadow-xl transition-transform group-hover:scale-110">
+            <Users className="h-5 w-5 md:h-7 md:w-7" />
+          </div>
+          {/* PERBAIKAN POIN 2: Diubah ke text-white */}
+          <p className="text-[14px] md:text-[16px] font-bold leading-tight text-white drop-shadow">
+            Inilah sistem yang membentuk budaya tanpa batas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="absolute bottom-10 left-1/2 -translate-x-1/2 md:left-12 md:translate-x-0 animate-bounce">
+      <ArrowDown className="text-[#b8946a] w-6 h-6" />
+    </div>
+  </div>
+</section>
 
       {/* SECTION 2: CONTENT */}
       <section className="relative z-20 bg-white py-20 md:py-32 border-t border-gray-100">
