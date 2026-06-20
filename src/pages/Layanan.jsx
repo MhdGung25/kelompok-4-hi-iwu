@@ -80,17 +80,17 @@ function Layanan() {
             "These cultures may appear different, but they are all connected through the same digital stage"
           </p>
           
-          <button 
+<button 
   onClick={() => {
     navigate("/about");
-    // Gunakan setTimeout sedikit agar navigasi selesai baru scroll dijalankan
+    // Menggunakan setTimeout agar navigasi selesai terlebih dahulu baru scroll dijalankan
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 100);
   }}
-  className="group relative px-8 py-4 bg-[#2D3344] text-white rounded-full font-bold text-lg shadow-xl hover:bg-blue-600 transition-all duration-300 hover:scale-105 active:scale-95"
+  className="bg-[#024982] hover:bg-[#023866] text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all transform hover:scale-105 active:scale-95 text-base md:text-lg border-4 border-white"
 >
-  <span className="relative z-10 flex items-center">
+  <span className="relative z-10 flex items-center justify-center">
     Go Behind the Stage
   </span>
 </button>

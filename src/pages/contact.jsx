@@ -2,18 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Contact() {
-  const extraImages = [
-      "/images/temen-rahma-2.jpg",
-     "/images/temen-rahma-3.jpg",
-    "/images/rahma.jpg",
-    "/images/temen-rahma.jpg",
-    "/images/temen-rahma-1.jpg",
-   "/images/temen-rahma-5.jpg",
-    "/images/temen-rahma-4.jpg",
-     "/images/rahma.jpg",
-    "/images/temen-rahma.jpg",
-    "/images/temen-rahma-5.jpg",
-  ];
+ 
 
   // Helper untuk styling card gambar agar konsisten
   const ImageCard = ({ src, index }) => (
@@ -29,40 +18,117 @@ function Contact() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gray-50 py-20 px-6">
-      <div className="text-center mb-16">
-        <h1 className="text-5xl md:text-6xl font-black italic capitalize tracking-tighter text-[#0f172a]">
-          Tim Kami
-        </h1>
-        <p className="mt-4 text-gray-500 italic text-lg">
-          "Halaman ini sedang dalam pengembangan."
-        </p>
-      </div>
+     <div className="text-center mb-16">
+  {/* Judul tetap di tengah */}
+  <h1 className="text-5xl md:text-6xl font-black italic capitalize tracking-tighter text-[#0f172a]">
+    Tim Kami
+  </h1>
+  
+  {/* Teks deskripsi pembungkusnya di tengah (mx-auto), tetapi isi teksnya rata kanan-kiri (text-justify) */}
+  <p className="mt-4 text-gray-500 italic text-lg max-w-3xl mx-auto text-justify whitespace-pre-line px-4">
+    "Behind every culture presented on this platform is a team committed to connecting local traditions with a global audience through digitalization"
+  </p>
+</div>
 
-      {/* CONTAINER UTAMA GRID (Mengikuti desain coretan) */}
-      <div className="max-w-5xl w-full flex flex-col gap-8">
-        
-        {/* BARIS 1: 2 FOTO (Laptop: 2 kolom, HP: 1 kolom) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-10 md:px-32">
-          {extraImages.slice(0, 2).map((src, index) => (
-            <ImageCard key={index} src={src} index={index} />
-          ))}
+{/* CONTAINER UTAMA GRID (Sesuai Sketsa Desain Tim Kami) */}
+<div className="max-w-5xl w-full flex flex-col gap-12 mt-12 mx-auto items-center">
+  
+  {/* Data Anggota Tim Berdasarkan Coretan Sketsa */}
+  {(() => {
+    const listTim = [
+      { nama: "Septiana Sutarman.jpg", src: "/images/tim-Septiana-Sutarman.jpg" }, // Anggota 1
+      { nama: "Abdurrahman Jundi Alfath", src: "/images/tim-Abdurrahman-Jundi-Alfath.jpg" }, // Anggota 2
+      { nama: "Rahmawati Lamabalawa", src: "/images/tim-Rahmawati-Lamabalawa.jpg" },     // Anggota 3
+      { nama: "PUTRI CANTIKA WIDYA HERMAWAN", src: "/images/tim-PUTRI-CANTIKA-WIDYA-HERMAWAN.jpg" },   // Anggota 4
+      { nama: "Tilawati Fakaubun", src: "/images/tim-Tilawati-Fakaubun.jpg" },       // Anggota 5
+      { nama: "Monica Balqish Sari-Banon", src: "/images/tim-Monica-Balqish-Sari-Banon.jpg" },           // Anggota 6
+      { nama: "Nurma Amelia Misbah", src: "/images/tim-Nurma-Amelia-Misbah.jpg" }              // Anggota 7
+    ];
+
+    return (
+      <>
+        {/* BARIS 1: 2 FOTO ANGGOTA (Abdulrohman & Sopiana Sutarman) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl px-6">
+          {listTim.slice(0, 2).map((anggota, idx) => {
+            const urutan = idx + 1;
+            return (
+              <div key={idx} className="flex flex-col items-center group">
+                <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
+                  <img 
+                    src={anggota.src} 
+                    alt={anggota.nama} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="text-center mt-4">
+                  <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
+                    {anggota.nama}
+                  </p>
+                  <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
+                    Anggota {urutan}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        {/* BARIS 2: 3 FOTO (Laptop: 3 kolom, HP: 1 kolom) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {extraImages.slice(2, 5).map((src, index) => (
-            <ImageCard key={index + 2} src={src} index={index + 2} />
-          ))}
+        {/* BARIS 2: 3 FOTO ANGGOTA (Iramawati, Putri Cika, & Tia Wati) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-6">
+          {listTim.slice(2, 5).map((anggota, idx) => {
+            const urutan = idx + 3;
+            return (
+              <div key={idx + 2} className="flex flex-col items-center group">
+                <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
+                  <img 
+                    src={anggota.src} 
+                    alt={anggota.nama} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="text-center mt-4">
+                  <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
+                    {anggota.nama}
+                  </p>
+                  <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
+                    Anggota {urutan}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        {/* BARIS 3: 2 FOTO (Laptop: 2 kolom, HP: 1 kolom) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-10 md:px-32">
-          {extraImages.slice(5, 7).map((src, index) => (
-            <ImageCard key={index + 5} src={src} index={index + 5} />
-          ))}
+        {/* BARIS 3: 2 FOTO ANGGOTA (Monica & Nurma) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl px-6">
+          {listTim.slice(5, 7).map((anggota, idx) => {
+            const urutan = idx + 6;
+            return (
+              <div key={idx + 5} className="flex flex-col items-center group">
+                <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
+                  <img 
+                    src={anggota.src} 
+                    alt={anggota.nama} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="text-center mt-4">
+                  <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
+                    {anggota.nama}
+                  </p>
+                  <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
+                    Anggota {urutan}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
+      </>
+    );
+  })()}
 
-      </div>
+</div>
 
       {/* TOMBOL KEMBALI */}
       <div className="flex justify-center">
