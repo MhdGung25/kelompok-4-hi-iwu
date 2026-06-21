@@ -36,8 +36,8 @@ function Contact() {
   {/* Data Anggota Tim Berdasarkan Coretan Sketsa */}
   {(() => {
     const listTim = [
-      { nama: "Abdurrahman Jundi Alfath", src: "/images/tim-Abdurrahman-Jundi-Alfath.jpg" }, // Anggota 1
-      { nama: "Septiana Sutarman", src: "/images/tim-Septiana-Sutarman.jpg" }, // Anggota 2
+      { nama: "Septiana Sutarman", src: "/images/Septiana-Sutarman.jpg" }, // Anggota 1
+      { nama: "Abdurrahman Jundi Alfath", src: "/images/Abdurrahman-Jundi-Alfath.jpg" }, // Anggota 2
       { nama: "Rahmawati Lamabalawa", src: "/images/tim-Rahmawati-Lamabalawa.jpg" },     // Anggota 3
       { nama: "PUTRI CANTIKA WIDYA HERMAWAN", src: "/images/tim-PUTRI-CANTIKA-WIDYA-HERMAWAN.jpg" },   // Anggota 4
       { nama: "Tilawati Fakaubun", src: "/images/tim-Tilawati-Fakaubun.jpg" },       // Anggota 5
