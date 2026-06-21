@@ -36,8 +36,8 @@ function Contact() {
   {/* Data Anggota Tim Berdasarkan Coretan Sketsa */}
   {(() => {
     const listTim = [
-      { nama: "Septiana Sutarman.jpg", src: "/images/tim-Septiana-Sutarman.jpg" }, // Anggota 1
-      { nama: "Abdurrahman Jundi Alfath", src: "/images/tim-Abdurrahman-Jundi-Alfath.jpg" }, // Anggota 2
+      { nama: "Abdurrahman Jundi Alfath", src: "/images/tim-Abdurrahman-Jundi-Alfath.jpg" }, // Anggota 1
+      { nama: "Septiana Sutarman", src: "/images/tim-Septiana-Sutarman.jpg" }, // Anggota 2
       { nama: "Rahmawati Lamabalawa", src: "/images/tim-Rahmawati-Lamabalawa.jpg" },     // Anggota 3
       { nama: "PUTRI CANTIKA WIDYA HERMAWAN", src: "/images/tim-PUTRI-CANTIKA-WIDYA-HERMAWAN.jpg" },   // Anggota 4
       { nama: "Tilawati Fakaubun", src: "/images/tim-Tilawati-Fakaubun.jpg" },       // Anggota 5
@@ -45,87 +45,78 @@ function Contact() {
       { nama: "Nurma Amelia Misbah", src: "/images/tim-Nurma-Amelia-Misbah.jpg" }              // Anggota 7
     ];
 
-    return (
-      <>
-        {/* BARIS 1: 2 FOTO ANGGOTA (Abdulrohman & Sopiana Sutarman) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl px-6">
-          {listTim.slice(0, 2).map((anggota, idx) => {
-            const urutan = idx + 1;
-            return (
-              <div key={idx} className="flex flex-col items-center group">
-                <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
-                  <img 
-                    src={anggota.src} 
-                    alt={anggota.nama} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="text-center mt-4">
-                  <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
-                    {anggota.nama}
-                  </p>
-                  <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
-                    Anggota {urutan}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+   return (
+  <>
+    {/* BARIS 1: 2 FOTO ANGGOTA (Abdulrohman & Sopiana Sutarman) */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl px-6">
+      {listTim.slice(0, 2).map((anggota, idx) => (
+        <div key={idx} className="flex flex-col items-center group">
+          <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
+            <img 
+              src={anggota.src} 
+              alt={anggota.nama} 
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div className="text-center mt-4">
+            <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
+              {anggota.nama}
+            </p>
+            <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
+              Anggota
+            </p>
+          </div>
         </div>
+      ))}
+    </div>
 
-        {/* BARIS 2: 3 FOTO ANGGOTA (Iramawati, Putri Cika, & Tia Wati) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-6">
-          {listTim.slice(2, 5).map((anggota, idx) => {
-            const urutan = idx + 3;
-            return (
-              <div key={idx + 2} className="flex flex-col items-center group">
-                <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
-                  <img 
-                    src={anggota.src} 
-                    alt={anggota.nama} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="text-center mt-4">
-                  <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
-                    {anggota.nama}
-                  </p>
-                  <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
-                    Anggota {urutan}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+    {/* BARIS 2: 3 FOTO ANGGOTA (Iramawati, Putri Cika, & Tia Wati) */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-6">
+      {listTim.slice(2, 5).map((anggota, idx) => (
+        <div key={idx + 2} className="flex flex-col items-center group">
+          <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
+            <img 
+              src={anggota.src} 
+              alt={anggota.nama} 
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div className="text-center mt-4">
+            <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
+              {anggota.nama}
+            </p>
+            <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
+              Anggota
+            </p>
+          </div>
         </div>
+      ))}
+    </div>
 
-        {/* BARIS 3: 2 FOTO ANGGOTA (Monica & Nurma) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl px-6">
-          {listTim.slice(5, 7).map((anggota, idx) => {
-            const urutan = idx + 6;
-            return (
-              <div key={idx + 5} className="flex flex-col items-center group">
-                <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
-                  <img 
-                    src={anggota.src} 
-                    alt={anggota.nama} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="text-center mt-4">
-                  <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
-                    {anggota.nama}
-                  </p>
-                  <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
-                    Anggota {urutan}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+    {/* BARIS 3: 2 FOTO ANGGOTA (Monica & Nurma) */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-2xl px-6">
+      {listTim.slice(5, 7).map((anggota, idx) => (
+        <div key={idx + 5} className="flex flex-col items-center group">
+          <div className="w-full aspect-[3/4] overflow-hidden rounded-lg shadow-xl bg-gray-100">
+            <img 
+              src={anggota.src} 
+              alt={anggota.nama} 
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div className="text-center mt-4">
+            <p className="font-black text-gray-800 tracking-wide uppercase text-sm">
+              {anggota.nama}
+            </p>
+            <p className="text-xs text-blue-600 font-semibold tracking-wider uppercase mt-1">
+              Anggota
+            </p>
+          </div>
         </div>
-      </>
-    );
+      ))}
+    </div>
+  </>
+);
   })()}
 
 </div>
