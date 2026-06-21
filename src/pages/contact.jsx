@@ -25,9 +25,9 @@ function Contact() {
   </h1>
   
   {/* Teks deskripsi pembungkusnya di tengah (mx-auto), tetapi isi teksnya rata kanan-kiri (text-justify) */}
-  <p className="mt-4 text-gray-500 italic text-lg max-w-3xl mx-auto text-justify whitespace-pre-line px-4">
-    "Behind every culture presented on this platform is a team committed to connecting local traditions with a global audience through digitalization"
-  </p>
+ <p className="mt-4 text-gray-500 italic text-lg max-w-3xl mx-auto text-center whitespace-pre-line px-4">
+  "Behind every culture presented on this platform is a team committed to connecting local traditions with a global audience through digitalization"
+</p>
 </div>
 
 {/* CONTAINER UTAMA GRID (Sesuai Sketsa Desain Tim Kami) */}
